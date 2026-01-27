@@ -1,1 +1,39 @@
 @import "tailwindcss";
+
+@layer base {
+    @font-face {
+      font-family: "Manrope";
+      src: url("/assets/font/Manrope-VariableFont.woff2") format("woff2");
+      font-style: normal;
+      font-weight: 100 900;
+      font-display: swap;
+    }
+    
+    @font-face {
+      font-family: "Inter";
+      src: url("/assets/font/Inter-VariableFont.woff2") format("woff2");
+      font-style: normal;
+      font-weight: 100 900;
+      font-display: swap;
+    }
+  }
+
+@theme {
+    --font-manrope: "Manrope", sans-serif;
+    --font-inter: "Inter", sans-serif;
+}
+
+@layer base {
+  
+    body {
+      font-family: var(--font-inter);
+      @apply bg-slate-950 text-slate-200 antialiased;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-manrope);
+    }
+  
+    html {
+      scroll-behavior: smooth;
+    }
+  }
