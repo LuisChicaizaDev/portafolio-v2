@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Github, Linkedin, FileText, Code2 } from 'lucide-react';
+import { Menu, X, FileText, Code2 } from 'lucide-react';
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { Button } from '../ui/Button';
 
 export const Navbar = () => {
@@ -84,10 +85,10 @@ export const Navbar = () => {
               {/* Iconos Sociales y CV */}
               <div className="flex items-center gap-4">
                 <a href="https://github.com/LuisChicaizaDev" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">
-                  <Github className="w-5 h-5" />
+                  <FaGithub  className="w-5 h-5" />
                 </a>
                 <a href="https://www.linkedin.com/in/chicaiza-luis/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">
-                  <Linkedin className="w-5 h-5" />
+                  <FaLinkedin className="w-5 h-5" />
                 </a>
                 
                 {/* BOTÓN DE DESCARGA CV*/}
@@ -131,10 +132,10 @@ export const Navbar = () => {
               {/* Iconos Sociales*/}
               <div className="flex gap-6">
                 <a href="https://github.com/LuisChicaizaDev" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">
-                  <Github className="size-6" />
+                  <FaGithub  className="size-6" />
                 </a>
                 <a href="https://www.linkedin.com/in/chicaiza-luis/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">
-                  <Linkedin className="size-6" />
+                  <FaLinkedin className="size-6" />
                 </a>
               </div>
             </div>
