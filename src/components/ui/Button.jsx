@@ -4,7 +4,13 @@
 // - icon: un componente de icono opcional
 // - className: clases extra por si necesitamos sobreescribir algo desde fuera
 // - props: el resto de propiedades (onClick, type, disabled, etc.)
-export const Button = ({ children, variant = 'primary', icon: Icon, className = '', ...props }) => {
+export const Button = ({ 
+  children, 
+  variant = 'primary', 
+  icon: Icon, 
+  className = '', 
+  href, // prop para enlaces
+  ...props }) => {
   
   const baseStyles = "inline-flex items-center justify-center px-6 py-3 rounded-xl font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-900 cursor-pointer";
   
@@ -14,9 +20,25 @@ export const Button = ({ children, variant = 'primary', icon: Icon, className = 
     outline: "bg-transparent border border-slate-700 text-slate-300 hover:text-white hover:border-slate-500"
   };
 
+  const finalClass = `${baseStyles} ${variants[variant]} ${className}`;
+
+  // Es un enlace (tiene href) se Renderizamos <a>
+  if (href) {
+    return (
+      <a 
+        href={href} 
+        className={finalClass} 
+        {...props} // Aquí se pasa 'download', 'target'.
+      >
+        {children}
+        {Icon && <Icon className="ml-2 w-4 h-4" />}
+      </a>
+    );
+  }
+
   return (
     <button 
-      className={`${baseStyles} ${variants[variant]} ${className}`} 
+      className={finalClass} 
       {...props}
     >
       {children}
