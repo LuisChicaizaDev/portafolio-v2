@@ -1,6 +1,6 @@
 import { ChevronRight, MailCheck, GraduationCap, Rocket, Atom } from 'lucide-react';
-import Button from '../ui/Button';
-import {Badge} from '../ui/Badge';
+import { Button } from '../ui/Button';
+import { Badge } from '../ui/Badge';
 
 export const Hero = () => {
   

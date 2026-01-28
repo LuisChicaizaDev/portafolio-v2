@@ -4,9 +4,9 @@
 // - icon: un componente de icono opcional
 // - className: clases extra por si necesitamos sobreescribir algo desde fuera
 // - props: el resto de propiedades (onClick, type, disabled, etc.)
-const Button = ({ children, variant = 'primary', icon: Icon, className = '', ...props }) => {
+export const Button = ({ children, variant = 'primary', icon: Icon, className = '', ...props }) => {
   
-  const baseStyles = "inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-900 cursor-pointer";
+  const baseStyles = "inline-flex items-center justify-center px-6 py-3 rounded-xl font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-900 cursor-pointer";
   
   const variants = {
     primary: "bg-indigo-600 hover:bg-indigo-500 text-white focus:ring-indigo-500 shadow-lg shadow-indigo-500/20 hover:shadow-indigo-500/40",
@@ -24,5 +24,3 @@ const Button = ({ children, variant = 'primary', icon: Icon, className = '', ...
     </button>
   );
 };
-
-export default Button;
