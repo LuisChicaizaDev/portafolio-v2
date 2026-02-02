@@ -1,5 +1,6 @@
 import { Hero } from "./components/sections/Hero";
 import { Navbar } from "./components/sections/Navbar"
+import { SkillsSection } from "./components/sections/SkillsSection"
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+        <SkillsSection />
       </main>
 
     </div>
