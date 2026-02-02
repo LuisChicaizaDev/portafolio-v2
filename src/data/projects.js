@@ -4,106 +4,162 @@ export const PROJECTS_DATA = {
     focus_actual: ["React", "Tailwind CSS"],
     herramientas: ["Git", "GitHub", "Figma", "WordPress", "VSC"]
   },
-  projects: {
-    featured: [
+ // PROYECTOS DESTACADOS
+ projects: [
     {
-        category: "frontend",
-        img: { 
-        src : "/assets/img/proyecto-aera.webp",
-        alt: "Página de Inicio de Aera Korean Beauty",
-        title: "Aera Korean Beauty"
-        },
-        title: "Aera Korean Beauty",
-        year: "2024 | Upd 2025",
-        tags: ["HTML & Sass", "JavaScript", "Figma", "PHP Legacy", "SEO Técnico"],
-        description: "Sitio web para un estudio de cosmética. En 2025 realicé una <strong>migración técnica a PHP modular</strong> para mejorar mantenimiento sin framework.",
-        isHighlight: true,
-        technical_highlights: [
+      title: "Fútbol App",
+      year: "2025",
+      description: "Aplicación para gestionar equipos de fútbol, desarrollada como experimento personal para aprender nuevas tecnologías y construir una app completa en tiempos reducidos usando IA como copiloto. Incluye panel público, panel admin, CRUD, autenticación y base de datos en Supabase.",
+      tags: ["React", "Tailwind CSS", "Supabase", "Next.js", "IA-asistida"],
+      links: {
+        demo: "https://futbol-app-mu.vercel.app/",
+        repo: "https://github.com/LuisChicaizaDev/futbol-app",
+      },
+      image: "/assets/img/proyecto-futbol-app.webp"
+    },
+    {
+      title: "MR. BARBER",
+      year: "2025",
+      description: "Aplicación web para gestionar reservas en una barbería. Los usuarios pueden registrarse, iniciar sesión y reservar citas. Incluye un panel de administración con operaciones CRUD para crear, actualizar o eliminar servicios. Además, consume una API REST mediante Fetch API.",
+      tags: ["HTML & SASS", "JavaScript", "PHP", "MySQL"],
+      links: {
+        demo: "https://mrbarber.free.nf",
+        repo: "https://github.com/LuisChicaizaDev/mrbarber-mvc-php",
+      },
+      image: "/assets/img/proyecto-mr-barber.webp"
+    },
+    {
+      title: "Desafíos Frontend Mentor",
+      year: "2025",
+      description: "Proyecto desarrollado para mostrar una recopilación de desafíos de Frontend Mentor, realizado con React y Tailwind CSS como parte de mi proceso de aprendizaje en un stack moderno. Incluye modo light/dark implementado con useState, useEffect y persistencia en localStorage.",
+      tags: ["React", "Tailwind CSS"],
+      links: {
+        demo: "https://frontend-mentor-luis.vercel.app/",
+        repo: "https://github.com/LuisChicaizaDev/challenges-frontend-mentor",
+      },
+      image: "/assets/img/proyecto-frontend-mentor.webp"
+    },
+    {
+      title: "Boxeo Project",
+      year: "2025",
+      description: "Plataforma web para gestionar eventos de boxeo, con registro de usuarios, administración de veladas y control de boxeadores. Desarrollado como proyecto final de curso, implementa autenticación, validaciones fullstack y operaciones CRUD con PHP y MySQL.",
+      tags: ["HTML & Sass", "JavaScript", "PHP", "MySQL"],
+      links: {
+        demo: "https://boxeoproject.free.nf/",
+        repo: "https://github.com/LuisChicaizaDev/proyecto-daw",
+      },
+      image: "/assets/img/proyecto-boxeo-project.webp"
+    },
+    {
+      title: "Aera Korean Beauty",
+      year: "2024 | Actualizado 2026",
+      isFeatured: true, 
+      studyType: "Migración & SEO",
+      description: "Sitio web para un estudio de cosmética coreana, diseñado desde Figma y desarrollado con HTML, Sass y JavaScript. En 2025 lo migré a PHP para mejorar su mantenimiento y estructura, manteniendo URLs limpias, el SEO existente y aplicando redirecciones 301.",
+      achievements: [
         "De HTML Estático → PHP Modular",
         "100% SEO Preservado (301 Redirects)",
-        "Urls Limpias & Semánticas"
-        ],
-        links: {
-        figma: "https://www.figma.com/design/84O4uO0UtmZ2DAZ1h36cXN/AERA",
-        website: "https://aerakoreanbeauty.com/"
-        }
+        "URLs Limpias y Semánticas (.htaccess)"
+      ],
+      tags: ["HTML & Sass", "JavaScript", "Figma", "PHP"],
+      links: {
+        demo: "https://aerakoreanbeauty.com/",
+        repo: "", // No disponible
+      },
+      image: "/assets/img/proyecto-aera.webp"
     },
     {
-        category: "fullstack",
-        img: { 
-        src : "/assets/img/proyecto-futbol-app.webp",
-        alt: "Página pública de Fútbol App",
-        title: "Fútbol App"
-        },
-        title: "Fútbol App",
-        year: "2025",
-        tags: ["React", "Tailwind CSS", "Supabase", "Next.js", "IA-asistida"],
-        description: "Aplicación para <strong>gestionar equipos de fútbol</strong>. Experimento personal de desarrollo acelerado con IA Copilot. Panel público, admin y CRUD completo.",
-        links: {
-        github: "https://github.com/LuisChicaizaDev/futbol-app",
-        demo: "https://futbol-app-mu.vercel.app/"
-        }
+      title: "Aera – Página de Enlaces",
+      year: "2025",
+      isFeatured: true,
+      studyType: "Optimización Web",
+      description: "Página de enlaces rápidos desarrollada para Aera, que centraliza enlaces clave para su negocio. Diseño minimalista alineado a la identidad de la marca. El mapa de Google Maps se carga de forma diferida mediante JavaScript para optimizar el rendimiento.",
+      achievements: [
+        "Carga diferida (Lazy Load) de Google Maps",
+        "Puntuación 99/100 en Core Web Vitals",
+        "Diseño Minimalista 'Mobile First'"
+      ],
+      tags: ["HTML & Sass", "JavaScript", "Figma"],
+      links: {
+        demo: "https://aerakoreanbeauty.com/linkbio/",
+        repo: "",
+      },
+      image: "/assets/img/proyecto-aera-links.webp"
     },
     {
-        category: "fullstack",
-        img: { 
-        src : "/assets/img/proyecto-mr-barber.webp",
-        alt: "Página de login de MR. BARBER",
-        title: "MR. BARBER"
-        },
-        title: "MR. BARBER",
-        year: "2025",
-        tags: ["HTML & SASS", "JavaScript", "PHP MVC", "MySQL"],
-        description: "Aplicación web para <strong>gestionar reservas</strong>. Panel de administración con operaciones CRUD. Arquitectura MVC manual y API REST propia.",
-        links: {
-        github: "https://github.com/LuisChicaizaDev/mrbarber-mvc-php",
-        demo: "https://mrbarber.free.nf"
-        }
+      title: "Mi Portafolio v1",
+      year: "2024 | Actualizado 2025",
+      description: "Portafolio web personal diseñado desde Figma y desarrollado con HTML, Sass, JavaScript y Bootstrap. Implementa la carga dinámica de proyectos mediante fetch y el consumo de datos desde JSON. Refleja estilo, enfoque técnico y evolución como desarrollador.",
+      tags: ["HTML & Sass", "Bootstrap", "JavaScript", "Figma"],
+      links: {
+        demo: "https://github.com/LuisChicaizaDev/portafolio", 
+        repo: "https://github.com/LuisChicaizaDev/portafolio",
+      },
+      image: "/assets/img/proyecto-portafolio.webp"
     }
-    ],
-    others: [
+  ],
+
+  //  OTROS PROYECTOS 
+  other_projects: [
     {
-        category: "frontend",
-        title: "Desafíos Frontend Mentor",
-        year: "2025",
-        tags: ["React", "Tailwind CSS", "Pixel-Perfect"],
-        description: "Recopilación de desafíos de UI complejos. Implementación de <strong>modo light/dark</strong> y enfoque en buenas prácticas.",
-        links: {
-        github: "https://github.com/LuisChicaizaDev/challenges-frontend-mentor",
-        demo: "https://frontend-mentor-luis.vercel.app/"
-        }
+      title: "Perfil Bento Tailwind",
+      year: "2025",
+      tags: ["Tailwind CSS", "HTML"],
+      description: "Proyecto práctico basado en el curso Tailwind CSS 4 de MiduDev, enfocado en el uso de utility classes, diseño responsive y la creación de una Bento Grid personalizada.",
+      links: { 
+        repo: "https://github.com/LuisChicaizaDev/perfil-bento-tailwind", 
+        demo: "https://perfil-bento-tailwind.netlify.app/" 
+      }
     },
     {
-        category: "fullstack",
-        title: "Boxeo Project (FP)",
-        year: "2025",
-        tags: ["HTML & Sass", "JavaScript", "PHP", "MySQL"],
-        description: "Plataforma para <strong>gestionar eventos de boxeo</strong>. Proyecto final de FP con autenticación segura.",
-        links: {
-        github: "https://github.com/LuisChicaizaDev/proyecto-daw",
-        demo: "https://boxeoproject.free.nf/"
-        }
+      title: "App Tareas React",
+      year: "2025",
+      tags: ["React", "CSS"],
+      description: "Proyecto realizado como parte de un curso de React de freeCodeCamp, con mejoras personales como persistencia de datos en localStorage y contadores dinámicos. Aplicación para gestionar tareas, con componentes reutilizables y manejo de estado con useState.",
+      links: { 
+        repo: "https://github.com/LuisChicaizaDev/app-tareas-react", 
+        demo: "https://app-tareas-react-sage.vercel.app/" 
+      }
     },
     {
-        category: "frontend",
-        title: "Anexa Luxury Cars",
-        year: "2024",
-        tags: ["WordPress", "Custom PHP", "JavaScript"],
-        description: "Desarrollo híbrido para concesionario. Personalización avanzada de plantilla mediante inyección de código.",
-        links: {
-        website: "https://anexaluxurycars.com/"
-        }
+      title: "Grupo Salux",
+      year: "2024",
+      tags: ["WordPress", "HTML & CSS", "JavaScript"],
+      description: "Desarrollo de un sitio WordPress para una red de clínicas, con páginas dedicadas para cada centro. Se añadieron funcionalidades con HTML, CSS y JavaScript. Proyecto real para un cliente, completado y listo para producción, aunque finalmente no se publicó por decisiones del cliente.",
+      links: { 
+        repo: "", 
+        demo: "https://dev.gruposalux.clinic" 
+      }
     },
     {
-        category: "frontend",
-        title: "Portafolio V1",
-        year: "2024",
-        tags: ["HTML & Sass", "Bootstrap", "JSON API"],
-        description: "Versión anterior del portafolio. Carga dinámica de proyectos mediante consumo de datos JSON.",
-        links: {
-        github: "https://github.com/LuisChicaizaDev/portafolio"
-        }
+      title: "Festival de Música",
+      year: "2024",
+      tags: ["HTML", "Sass", "JavaScript"],
+      description: "Pagina desarrollada como práctica inicial con Sass, donde apliqué variables y mixins. El proyecto fue clave para familiarizarme con un preprocesador CSS. También incorporé interactividad con JavaScript para mejorar la experiencia del usuario.",
+      links: { 
+        repo: "https://github.com/LuisChicaizaDev/festival-musica", 
+        demo: "https://v-festival-musica.netlify.app/" 
+      }
+    },
+    {
+      title: "Blog de Café",
+      year: "2023",
+      tags: ["HTML", "CSS", "Grid", "Flexbox"],
+      description: "Blog ficticio creado para practicar diseño responsivo con CSS Grid y Flexbox. El proyecto incluye una estructura multi-página que me permitió fortalecer mis habilidades técnicas de maquetación y diseño web adaptable.",
+      links: { 
+        repo: "https://github.com/LuisChicaizaDev/blog-cafe", 
+        demo: "https://v1-demo-blog-cafe.netlify.app/" 
+      }
+    },
+    {
+      title: "Museo al Aire Libre",
+      year: "2023",
+      tags: ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery"],
+      description: "Primer proyecto grupal durante mi formación, enfocado en la creación de un sitio sobre esculturas urbanas en Oviedo. Participé en todo el proceso, desde la toma de fotografías hasta la implementación con HTML, CSS, Bootstrap y jQuery, aplicando Scrum como metodología ágil.",
+      links: { 
+        repo: "", 
+        demo: "http://oviedomuseoairelibre.com/" 
+      }
     }
-    ]
-  }
+  ]
 };
