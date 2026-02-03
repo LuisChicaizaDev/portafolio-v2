@@ -4,7 +4,7 @@ import { Button } from '../ui/Button';
 import { PROJECTS_DATA } from '../../data/projects';
 
 export const ProjectsSection = () => {
-  // Separamos los proyectos: Destacados (Casos reales) vs Estándar
+  // Separamos los proyectos: Destacados vs Estándar
   const featuredCases = PROJECTS_DATA.projects.filter(p => p.isFeatured);
   const standardProjects = PROJECTS_DATA.projects.filter(p => !p.isFeatured);
 
@@ -18,23 +18,25 @@ export const ProjectsSection = () => {
               <div className="p-2 bg-indigo-500/10 rounded-lg border border-indigo-500/20">
                 <FolderGit2 className="w-6 h-6 text-indigo-400" />
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-white">Casos de Estudio & Proyectos</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-white">
+                Proyectos <span className="text-transparent bg-clip-text bg-linear-to-r from-indigo-400 to-purple-400">Destacados</span>
+              </h2>
            </div>
-           <p className="text-slate-400 max-w-2xl text-lg">
-             Soluciones reales en producción y aplicaciones experimentales.
+           <p className="text-slate-400 max-w-3xl text-lg">
+              Más allá del código, me motiva resolver problemas y ayudar. Aquí muestro cómo apliqué mis conocimientos para impulsar un negocio familiar, utilizando este reto real como plataforma de aprendizaje para dominar todo el ciclo de desarrollo de un proyecto.
            </p>
         </div>
 
         {/* =======================================================
             CASOS DE ESTUDIO 
            ======================================================= */}
-        <div className="grid grid-cols-2 gap-12 mb-24">
+        <div className="grid gap-12 mb-30">
            {featuredCases.map((project) => (
              <article 
                key={project.title} 
                className="group relative bg-slate-900/50 border border-slate-800 rounded-3xl overflow-hidden hover:border-indigo-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-500/10"
              >
-                <div className="flex flex-col h-full">
+                <div className="flex flex-col lg:flex-row h-full">
                   
                   {/* COLUMNA IZQUIERDA: IMAGEN */}
                   <div className="w-full h-auto lg:h-auto relative overflow-hidden bg-slate-950">
@@ -51,12 +53,12 @@ export const ProjectsSection = () => {
                        src={project.image} 
                        alt={project.title} 
                        loading="lazy"
-                       className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                       className="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-700 ease-out"
                      />
                   </div>
 
                   {/*  CONTENIDO */}
-                  <div className="w-full p-6 lg:p-10 flex flex-col justify-center">
+                  <div className="w-full p-6 lg:p-8 flex flex-col justify-center">
                      
                      <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-indigo-400 transition-colors">
                        {project.title}
@@ -66,9 +68,9 @@ export const ProjectsSection = () => {
                        {project.description}
                      </p>
 
-                     {/* CAJA DE LOGROS (Estilo Prototipo) */}
+                     {/*LOGROS*/}
                      {project.achievements && (
-                       <div className="bg-slate-950/50 border border-slate-800 rounded-xl p-6 mb-8">
+                       <div className="bg-slate-950/50 border border-slate-800 rounded-xl p-4 mb-8">
                           <h4 className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-4 flex items-center gap-2">
                             <CheckCircle2 className="w-4 h-4" /> Logros
                           </h4>
@@ -86,7 +88,7 @@ export const ProjectsSection = () => {
                      {/* TAGS */}
                      <div className="flex flex-wrap gap-2 mb-8">
                         {project.tags.map(tag => (
-                          <span key={tag} className="text-xs font-medium text-slate-400 bg-slate-800 border border-slate-700 px-3 py-1 rounded-full">
+                          <span key={tag} className="text-xs font-medium text-slate-400 bg-slate-950 border border-slate-800 px-2 py-1 rounded">
                             {tag}
                           </span>
                         ))}
@@ -138,15 +140,23 @@ export const ProjectsSection = () => {
         </div>
 
         {/* =======================================================
-            PARTE 2: PROYECTOS PERSONALES (Grid Vertical Clásico)
+           PROYECTOS PERSONALES 
            ======================================================= */}
         
-        <div className="mb-8 flex items-end gap-4">
-           <h3 className="text-2xl font-bold text-white">Laboratorio & Prácticas</h3>
+        <div className="my-16 flex items-end gap-4">
+           <div>
+           <h3 className="text-3xl font-bold text-white mb-4">
+              Laboratorio & Prácticas
+            </h3>
+            <p className="text-slate-400 max-w-3xl mx-auto text-lg">
+              Desde mi Trabajo Final de Curso hasta mis últimos experimentos con IA. 
+              Aquí es donde pruebo nuevas tecnologías y consolido conocimientos.
+            </p>
+           </div>
            <div className="h-px grow bg-slate-800 mb-3"></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-30">
           {standardProjects.map((project) => (
             <article 
               key={project.title} 
@@ -173,7 +183,7 @@ export const ProjectsSection = () => {
                 </p>
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tags.map((tag) => (
-                    <span key={tag} className="px-2 py-1 text-[10px] font-medium text-slate-400 bg-slate-950 rounded border border-slate-800">
+                    <span key={tag} className="px-2 py-1 text-xs font-medium text-slate-400 bg-slate-950 rounded border border-slate-800">
                       {tag}
                     </span>
                   ))}
@@ -192,13 +202,16 @@ export const ProjectsSection = () => {
         </div>
 
         {/* =======================================================
-            PARTE 3: OTROS PROYECTOS (Compacto)
+            OTROS PROYECTOS 
            ======================================================= */}
         
-        <div className="text-center mb-12">
-            <h3 className="text-2xl font-bold text-white inline-block relative">
-              Prácticas & Otros Proyectos
+        <div className="text-center my-16">
+            <h3 className="text-2xl font-bold text-white inline-block relative mb-4">
+              Otros Proyectos
             </h3>
+            <p className="text-slate-400 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
+              Pequeños proyectos enfocados en experimentar y dominar conceptos específicos (CSS Grid, Flexbox React Hooks, Maquetación) sirviendo como primera toma de contacto para probar nuevas tecnologías.
+            </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -210,7 +223,7 @@ export const ProjectsSection = () => {
                {/* HEADER CARD: CARPETA + LINKS */}
                <div className="flex justify-between items-start mb-6">
                   <div className="text-indigo-500 group-hover:text-indigo-400 transition-colors">
-                     <Folder className="w-10 h-10" strokeWidth={1.5} />
+                     <Folder className="size-8" strokeWidth={1.5} />
                   </div>
                   <div className="flex gap-4">
                      {project.links.repo && (
@@ -250,7 +263,7 @@ export const ProjectsSection = () => {
                {/* TAGS AL PIE */}
                <div className="flex flex-wrap gap-2 mt-auto">
                   {project.tags.map(tag => (
-                    <span key={tag} className="px-2 py-1 text-[10px] font-medium text-slate-400 bg-slate-950 rounded border border-slate-800">
+                    <span key={tag} className="px-2 py-1 text-xs font-medium text-slate-400 bg-slate-950 rounded border border-slate-800">
                       {tag}
                     </span>
                   ))}

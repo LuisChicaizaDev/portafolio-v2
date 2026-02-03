@@ -61,7 +61,7 @@ export const PROJECTS_DATA = {
         "100% SEO Preservado (301 Redirects)",
         "URLs Limpias y Semánticas (.htaccess)"
       ],
-      tags: ["HTML & Sass", "JavaScript", "Figma", "PHP"],
+      tags: ["HTML & Sass", "JavaScript", "PHP", "Figma"],
       links: {
         demo: "https://aerakoreanbeauty.com/",
         repo: "", // No disponible
