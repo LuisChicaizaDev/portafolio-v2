@@ -210,7 +210,7 @@ export const ProjectsSection = () => {
               Otros Proyectos
             </h3>
             <p className="text-slate-400 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
-              Pequeños proyectos enfocados en experimentar y dominar conceptos específicos (CSS Grid, Flexbox React Hooks, Maquetación) sirviendo como primera toma de contacto para probar nuevas tecnologías.
+              Pequeños proyectos enfocados en experimentar y dominar conceptos específicos (CSS Grid, Flexbox React Hooks, Maquetación) que me han servido como primera toma de contacto para probar nuevas tecnologías.
             </p>
         </div>
 

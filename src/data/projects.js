@@ -122,16 +122,6 @@ export const PROJECTS_DATA = {
       }
     },
     {
-      title: "Grupo Salux",
-      year: "2024",
-      tags: ["WordPress", "HTML & CSS", "JavaScript"],
-      description: "Desarrollo de un sitio WordPress para una red de clínicas, con páginas dedicadas para cada centro. Se añadieron funcionalidades con HTML, CSS y JavaScript. Proyecto real para un cliente, completado y listo para producción, aunque finalmente no se publicó por decisiones del cliente.",
-      links: { 
-        repo: "", 
-        demo: "https://dev.gruposalux.clinic" 
-      }
-    },
-    {
       title: "Festival de Música",
       year: "2024",
       tags: ["HTML", "Sass", "JavaScript"],
