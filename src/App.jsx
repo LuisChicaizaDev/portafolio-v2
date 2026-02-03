@@ -2,6 +2,7 @@ import { Hero } from "./components/sections/Hero";
 import { Navbar } from "./components/sections/Navbar"
 import { SkillsSection } from "./components/sections/SkillsSection"
 import { ProjectsSection } from "./components/sections/ProjectsSection"
+import { ExperienceSection } from "./components/sections/ExperienceSection";
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
         <Hero />
         <SkillsSection />
         <ProjectsSection />
+        <ExperienceSection />
       </main>
 
     </div>
