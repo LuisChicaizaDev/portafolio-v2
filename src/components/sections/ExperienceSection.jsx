@@ -1,6 +1,6 @@
-import React from 'react';
 import { Briefcase, GraduationCap, Calendar, CheckCircle2 } from 'lucide-react';
 import { EXPERIENCE_DATA } from '../../data/experience';
+import { Badge } from '../ui/Badge';
 
 export const ExperienceSection = () => {
 
@@ -44,17 +44,15 @@ export const ExperienceSection = () => {
                       <h4 className="text-xl font-bold text-slate-100 group-hover:text-indigo-400 transition-colors">
                         {job.role}
                       </h4>
-                      <span className="inline-flex items-center gap-1.5 text-xs font-medium text-indigo-300 bg-indigo-950/50 px-3 py-1 rounded-full border border-indigo-500/20">
-                        <Calendar className="w-3 h-3" />
-                        {job.dates}
-                      </span>
+                      
+                      <Badge icon={Calendar} text={job.dates}/>
                     </div>
 
                     <h5 className="text-md text-slate-400 font-medium mb-4">
                       {job.company}
                     </h5>
 
-                    <p className="text-slate-400 text-sm leading-relaxed mb-4">
+                    <p className="text-slate-300 text-sm leading-relaxed mb-4">
                       {job.description}
                     </p>
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Github, ExternalLink, FolderGit2, CheckCircle2, Zap, Palette, Folder } from 'lucide-react';
 import { Button } from '../ui/Button'; 
 import { PROJECTS_DATA } from '../../data/projects';
