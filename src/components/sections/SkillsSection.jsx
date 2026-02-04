@@ -48,28 +48,28 @@ const TechIcons = {
   
 // FUNCIÓN DE SELECCIÓN DE ICONOS 
 const getSkillIcon = (skillName) => {
-  if (!skillName) return <Code2 className="w-4 h-4 text-slate-400" />;
+  if (!skillName) return <Code2 className="size-5 text-slate-400" />;
 
   const lower = skillName.toLowerCase();
 
   switch (true) {
-    case lower.includes('react'): return <TechIcons.React className="w-5 h-5 text-[#61DAFB]" />;
-    case lower.includes('tailwind'): return <TechIcons.Tailwind className="w-5 h-5 text-sky-400" />;
+    case lower.includes('react'): return <TechIcons.React className="size-5 text-[#61DAFB]" />;
+    case lower.includes('tailwind'): return <TechIcons.Tailwind className="size-5 text-sky-400" />;
 
-    case lower.includes('html'): return <TechIcons.HTML5 className="w-4 h-4 text-orange-500" />;
-    case lower.includes('css'): return <TechIcons.CSS3 className="w-4 h-4 text-blue-500" />;
-    case lower.includes('javascript') || lower.includes('js'): return <TechIcons.JavaScript className="w-4 h-4 text-yellow-400" />;
-    case lower.includes('mysql') || lower.includes('sql'): return <TechIcons.MySQL className="w-4 h-4 text-blue-400" />;
-    case lower.includes('php'): return <TechIcons.PHP className="w-5 h-5 text-indigo-400" />;
-    case lower.includes('bootstrap'): return <TechIcons.Bootstrap className="w-4 h-4 text-purple-500" />;
-    case lower.includes('sass'): return <TechIcons.Sass className="w-4 h-4 text-pink-400" />;
+    case lower.includes('html'): return <TechIcons.HTML5 className="size-5 text-orange-500" />;
+    case lower.includes('css'): return <TechIcons.CSS3 className="size-5 text-blue-500" />;
+    case lower.includes('javascript') || lower.includes('js'): return <TechIcons.JavaScript className="size-5 text-yellow-400" />;
+    case lower.includes('mysql') || lower.includes('sql'): return <TechIcons.MySQL className="size-5 text-blue-400" />;
+    case lower.includes('php'): return <TechIcons.PHP className="size-5 text-indigo-400" />;
+    case lower.includes('bootstrap'): return <TechIcons.Bootstrap className="size-5 text-purple-500" />;
+    case lower.includes('sass'): return <TechIcons.Sass className="size-5 text-pink-400" />;
 
-    case lower.includes('github'): return <TechIcons.GitHub className="w-4 h-4 text-white" />;
-    case lower.includes('git'): return <TechIcons.Git className="w-4 h-4 text-orange-500" />;
-    case lower.includes('figma'): return <TechIcons.Figma className="w-4 h-4 text-[#F24E1E]" />;
-    case lower.includes('wordpress'): return <TechIcons.WordPress className="w-4 h-4 text-blue-400" />;
+    case lower.includes('github'): return <TechIcons.GitHub className="size-5 text-white" />;
+    case lower.includes('git'): return <TechIcons.Git className="size-5 text-orange-500" />;
+    case lower.includes('figma'): return <TechIcons.Figma className="size-5 text-[#F24E1E]" />;
+    case lower.includes('wordpress'): return <TechIcons.WordPress className="size-5 text-blue-400" />;
 
-    default: return <Code2 className="w-4 h-4 text-slate-400" />;
+    default: return <Code2 className="size-5 text-slate-400" />;
   }
 };
 
@@ -96,7 +96,7 @@ export const SkillsSection = () => (
       </div>
 
       {/* --- BENTO GRID --- */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
         {/* FORMACIÓN */}
         <div className="md:col-span-1 md:row-span-2 group relative p-8 bg-slate-900 border border-slate-800 rounded-3xl hover:border-indigo-500/30 transition-all duration-500 flex flex-col">
@@ -136,7 +136,7 @@ export const SkillsSection = () => (
         </div>
 
         {/* STACK PRINCIPAL */}
-        <div className="md:col-span-2 relative p-8 bg-linear-to-br from-slate-900 to-slate-900/50 border border-slate-800 rounded-3xl group overflow-hidden">
+        <div className="md:col-span-1 md:row-span-2 lg:row-span-1 lg:col-span-2 relative p-8 bg-linear-to-br from-slate-900 to-slate-900/50 border border-slate-800 rounded-3xl group overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 group-hover:bg-indigo-500/20 transition-all duration-500"></div>
 
           <div className="relative z-10">
@@ -161,8 +161,9 @@ export const SkillsSection = () => (
           </div>
         </div>
 
-        {/* base técnica */}
-        <div className="md:col-span-1 p-8 bg-slate-900 border border-slate-800 rounded-3xl hover:border-slate-700 transition-colors">
+        {/* Base técnica */}
+        <div className="md:col-span-1 group relative p-8 bg-slate-900 border border-slate-800 rounded-3xl hover:border-slate-700 transition-colors">
+          <div className="absolute inset-0 bg-linear-to-b from-indigo-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl" />
           <div className="flex items-center gap-3 mb-6">
             <div className="p-2.5 bg-orange-500/10 rounded-lg text-orange-400"><Layers className="w-5 h-5" /></div>
             <h3 className="font-bold text-slate-200">Mi base técnica</h3>
@@ -177,7 +178,8 @@ export const SkillsSection = () => (
         </div>
 
         {/*  HERRAMIENTAS */}
-        <div className="md:col-span-1 p-8 bg-slate-900 border border-slate-800 rounded-3xl hover:border-slate-700 transition-colors">
+        <div className="md:col-span-1 group relative p-8 bg-slate-900 border border-slate-800 rounded-3xl hover:border-slate-700 transition-colors">
+          <div className="absolute inset-0 bg-linear-to-b from-indigo-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl" />
           <div className="flex items-center gap-3 mb-6">
             <div className="p-2.5 bg-purple-500/10 rounded-lg text-purple-400"><Terminal className="w-5 h-5" /></div>
             <h3 className="font-bold text-slate-200">Mis herramientas</h3>
