@@ -12,7 +12,7 @@ export const Hero = () => {
   };
 
   return (
-    <section className="pt-32 lg:pt-50 pb-20 px-6 relative overflow-hidden flex items-center min-h-[90vh] md:min-h-[80vh]">
+    <section id="inicio" className="pt-32 lg:pt-50 pb-20 px-6 relative overflow-hidden flex items-center min-h-[90vh] md:min-h-[80vh]">
       
       {/* --- EFECTOS DE FONDO (Background Ambient) --- */}
       <div className="absolute top-20 right-0 w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl -z-10" />

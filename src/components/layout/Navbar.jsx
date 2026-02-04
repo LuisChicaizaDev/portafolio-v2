@@ -28,9 +28,9 @@ export const Navbar = () => {
   }, []);
 
   const navLinks = [
+    { href: "#inicio", label: "Inicio" },
     { href: "#proyectos", label: "Proyectos" },
-    { href: "#experiencia", label: "Experiencia" },
-    { href: "#sobre-mi", label: "Sobre mí" },
+    { href: "#trayectoria", label: "Trayectoria" },
     { href: "#contacto", label: "Contacto" },
   ];
 
@@ -47,7 +47,7 @@ export const Navbar = () => {
       {/* Overlay oscuro para móvil */}
       {isMobileMenuOpen && (
         <div 
-          className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-40 transition-opacity"
+          className="fixed inset-0 bg-slate-950/40 backdrop-blur-sm z-40 transition-opacity"
           onClick={() => setIsMobileMenuOpen(false)}
         ></div>
       )}
@@ -55,7 +55,7 @@ export const Navbar = () => {
         <div className={`${containerClasses} transition-all duration-300 mx-auto`}>
           <div className="flex justify-between items-center">
             
-            <a href="#" className="group flex items-center gap-2 text-xl font-bold tracking-tight text-slate-100">
+            <a href="#inicio" className="group flex items-center gap-2 text-xl font-bold tracking-tight text-slate-100">
               <div className="bg-indigo-500/10 p-2 rounded-lg border border-indigo-500/20 group-hover:border-indigo-500/50 transition-colors">
               <Code2 className="w-5 h-5 text-indigo-400 group-hover:rotate-12 transition-transform" />
               </div>
@@ -106,7 +106,7 @@ export const Navbar = () => {
 
         {/* --- MOBILE MENU OVERLAY --- */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden absolute top-full left-0 w-full mt-1 bg-slate-950 border-b border-slate-800 rounded-3xl p-6 flex flex-col gap-4 shadow-2xl animate-in slide-in-from-top-5">
+          <div className="lg:hidden absolute top-full left-0 w-full mt-1 bg-slate-950 border border-slate-600/50 rounded-3xl p-6 flex flex-col gap-4 shadow-2xl">
             {navLinks.map((link) =>(
               <a 
                 key={link.href}
