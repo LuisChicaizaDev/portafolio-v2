@@ -1,4 +1,5 @@
-import { Github, ExternalLink, FolderGit2, CheckCircle2, Zap, Palette, Folder } from 'lucide-react';
+import { ExternalLink, FolderGit2, CheckCircle2, Zap, Palette, Folder } from 'lucide-react';
+import { FiGithub } from "react-icons/fi";
 import { Button } from '../ui/Button'; 
 import { PROJECTS_DATA } from '../../data/projects';
 
@@ -125,7 +126,7 @@ export const ProjectsSection = () => {
                              href={project.links.repo} 
                              target="_blank" 
                              rel="noopener noreferrer"
-                             icon={Github}
+                             icon={FiGithub}
                            >
                              Código
                            </Button>
@@ -188,7 +189,7 @@ export const ProjectsSection = () => {
                 </div>
                 <div className="flex gap-3 mt-auto pt-4 border-t border-slate-800">
                   {project.links.repo && (
-                    <Button variant="outline" className="flex-1 py-2! text-xs!" href={project.links.repo} target="_blank" icon={Github}>Código</Button>
+                    <Button variant="outline" className="flex-1 py-2! text-xs!" href={project.links.repo} target="_blank" icon={FiGithub}>Código</Button>
                   )}
                   {project.links.demo && (
                     <Button variant="secondary" className="flex-1 py-2! text-xs!" href={project.links.demo} target="_blank" icon={ExternalLink}>Demo</Button>
@@ -231,7 +232,7 @@ export const ProjectsSection = () => {
                          className="text-slate-400 hover:text-white transition-colors"
                          aria-label="Ver Código"
                        >
-                         <Github className="w-5 h-5" />
+                         <FiGithub className="w-5 h-5" />
                        </a>
                      )}
                      {project.links.demo && (
