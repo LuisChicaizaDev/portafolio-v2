@@ -1,5 +1,5 @@
 import { Hero } from "./components/sections/Hero"
-import { Navbar } from "./components/sections/Navbar"
+import { Navbar } from "./components/layout/Navbar"
 import { SkillsSection } from "./components/sections/SkillsSection"
 import { ProjectsSection } from "./components/sections/ProjectsSection"
 import { ExperienceSection } from "./components/sections/ExperienceSection"
