@@ -9,11 +9,11 @@ export const Footer = () => {
         
         {/*  Copyright */}
         <div className="text-center md:text-left">
-          <p className="font-medium text-slate-200">
+          <p className="font-medium text-slate-400">
             © {currentYear} Luis Chicaiza
           </p>
-          <p className="text-xs text-slate-500 mt-1">
-            Desarrollado con <span className="text-indigo-400">React</span> & <span className="text-cyan-400">Tailwind CSS</span>.
+          <p className="text-sm text-slate-400 mt-1">
+            Desarrollado con <span className="text-indigo-400">React</span>, <span className="text-indigo-400">Tailwind CSS</span> & <span className="text-indigo-400">Cursor</span>.
           </p>
         </div>
 
