@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { Mail, Linkedin, ExternalLink, Copy, Check } from 'lucide-react'
+import { Mail, ExternalLink, Copy, Check } from 'lucide-react'
+import { FaLinkedinIn } from "react-icons/fa6";
 
 export const ContactSection = () => {
   const [copied, setCopied] = useState(false);
@@ -18,21 +19,21 @@ export const ContactSection = () => {
         
         {/* --- TEXTO Y BOTONES --- */}
         <div className="space-y-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            ¿Listo para <br />
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            ¿Quieres <br />
             <span className="text-transparent bg-clip-text bg-linear-to-r from-indigo-400 to-purple-400">
-              colaborar?
+              contactarme?
             </span>
           </h2>
 
-          <p className="text-slate-400 text-lg leading-relaxed max-w-md">
-            Si buscas un perfil híbrido con mentalidad de ingeniero para tu equipo frontend o fullstack, mi terminal siempre está abierta.
+          <p className="text-slate-400 text-lg leading-relaxed max-w-3xl">
+            Busco sumarme a un equipo donde pueda aportar mis conocimientos y seguir creciendo. Si necesitas a alguien detallista, curioso y con muchas ganas de construir y superarse, estoy disponible.
           </p>
 
-          <div className="flex flex-col gap-4 max-w-lg">
+          <div className="flex flex-col gap-4">
 
             {/* BOTÓN EMAIL  */}
-            <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-4 md:p-6 inline-flex flex-col md:flex-row justify-between md:items-center gap-4 md:gap-6 hover:border-indigo-500/30 transition-colors">
+            <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-4 md:p-6 inline-flex justify-between grow md:items-center gap-4 md:gap-6 hover:border-indigo-500/30 transition-colors">
 
               <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6">
                 <div className="p-3 bg-indigo-500/10 rounded-full text-indigo-400">
@@ -45,7 +46,7 @@ export const ContactSection = () => {
                     href={`mailto:${email}`} 
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xl md:text-2xl font-bold text-white hover:text-indigo-400 transition-colors"
+                    className="font-bold text-white hover:text-indigo-400 transition-colors"
                   >
                     {email}
                   </a>
@@ -63,11 +64,11 @@ export const ContactSection = () => {
             </div>
 
             {/* BOTÓN LINKEDIN */}
-            <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-4 md:p-6 inline-flex flex-col md:flex-row justify-between md:items-center gap-4 md:gap-6 hover:border-indigo-500/30 transition-colors">
+            <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-4 md:p-6 inline-flex justify-between grow md:items-center gap-4 md:gap-6 hover:border-indigo-500/30 transition-colors">
 
               <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6">
                 <div className="p-3 bg-indigo-500/10 rounded-full text-indigo-400">
-                  <Linkedin className="w-6 h-6" />
+                  <FaLinkedinIn className="w-6 h-6" />
                 </div>
 
                 <div className="text-left">
@@ -76,7 +77,7 @@ export const ContactSection = () => {
                     href="https://www.linkedin.com/in/chicaiza-luis/" 
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xl md:text-2xl font-bold text-white hover:text-indigo-400 transition-colors"
+                    className="font-bold text-white hover:text-indigo-400 transition-colors"
                   >
                     in/chicaiza-luis
                   </a>
