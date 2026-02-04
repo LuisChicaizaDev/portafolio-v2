@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Menu, X, FileText, Code2 } from 'lucide-react';
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { Button } from '../ui/Button';
+import { SocialLinks } from '../ui/SocialLinks';
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -84,12 +85,8 @@ export const Navbar = () => {
 
               {/* Iconos Sociales y CV */}
               <div className="flex items-center gap-4">
-                <a href="https://github.com/LuisChicaizaDev" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">
-                  <FaGithub  className="w-5 h-5" />
-                </a>
-                <a href="https://www.linkedin.com/in/chicaiza-luis/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">
-                  <FaLinkedin className="w-5 h-5" />
-                </a>
+                
+                <SocialLinks />
                 
                 {/* BOTÓN DE DESCARGA CV*/}
                 <Button variant="secondary" className="py-1.5! px-4! text-xs! gap-2" icon={FileText}>
@@ -124,20 +121,13 @@ export const Navbar = () => {
             <hr className="border-slate-800" />
             {/* Iconos Sociales y CV */}
             <div className="flex flex-col items-center justify-center gap-6">
-              {/* BOTÓN DE DESCARGA CV*/}
+
               <Button variant="secondary" className="gap-2" icon={FileText}>
                 Descargar CV
               </Button>
 
               {/* Iconos Sociales*/}
-              <div className="flex gap-6">
-                <a href="https://github.com/LuisChicaizaDev" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">
-                  <FaGithub  className="size-6" />
-                </a>
-                <a href="https://www.linkedin.com/in/chicaiza-luis/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">
-                  <FaLinkedin className="size-6" />
-                </a>
-              </div>
+              <SocialLinks iconSize="size-6" />
             </div>
           </div>
         )}

@@ -1,6 +1,6 @@
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
-export const SocialLinks = ({ className = "" }) => {
+export const SocialLinks = ({ className = "", iconSize = "size-5" }) => {
   return (
     <div className={`flex items-center gap-6 ${className}`}>
       
@@ -12,7 +12,7 @@ export const SocialLinks = ({ className = "" }) => {
         aria-label="LinkedIn"
         className="text-slate-400 hover:text-white transition-colors"
       >
-        <FaLinkedin className="w-5 h-5" />
+        <FaLinkedin className={iconSize} />
       </a>
       
       {/* GitHub */}
@@ -23,7 +23,7 @@ export const SocialLinks = ({ className = "" }) => {
         aria-label="GitHub"
         className="text-slate-400 hover:text-white transition-colors"
       >
-        <FaGithub className="w-5 h-5" />
+        <FaGithub className={iconSize} />
       </a>
 
     </div>
