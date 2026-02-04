@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, FileText, Code2 } from 'lucide-react';
-import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { Button } from '../ui/Button';
 import { SocialLinks } from '../ui/SocialLinks';
 
