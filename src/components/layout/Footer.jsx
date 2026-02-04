@@ -1,4 +1,4 @@
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { SocialLinks } from "../ui/SocialLinks"
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -18,28 +18,7 @@ export const Footer = () => {
         </div>
 
         {/* Redes Sociales */}
-        <div className="flex items-center gap-6">
-           <a 
-             href="https://www.linkedin.com/in/chicaiza-luis" 
-             target="_blank" 
-             rel="noopener noreferrer" 
-             aria-label="LinkedIn"
-             className="text-slate-500 hover:text-indigo-400 transition-colors transform hover:scale-110"
-           >
-             <FaLinkedin className="w-5 h-5" />
-           </a>
-           
-           <a 
-             href="https://github.com/LuisChicaizaDev"
-             target="_blank" 
-             rel="noopener noreferrer" 
-             aria-label="GitHub"
-             className="text-slate-500 hover:text-white transition-colors transform hover:scale-110"
-           >
-             <FaGithub className="w-5 h-5" />
-           </a>
-        </div>
-
+        <SocialLinks />
       </div>
     </footer>
   );
