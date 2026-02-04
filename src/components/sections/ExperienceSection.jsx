@@ -12,7 +12,7 @@ export const ExperienceSection = () => {
       <div className="max-w-6xl mx-auto relative z-10">
         {/* HEADER */}
         <div className="mb-16 text-center md:text-left">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Experiencia <span className="text-transparent bg-clip-text bg-linear-to-r from-indigo-400 to-purple-400">& Formación</span>
           </h2>
           <p className="text-slate-400 max-w-3xl text-lg">

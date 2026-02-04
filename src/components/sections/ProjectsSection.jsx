@@ -18,7 +18,7 @@ export const ProjectsSection = () => {
               <div className="p-2 bg-indigo-500/10 rounded-lg border border-indigo-500/20">
                 <FolderGit2 className="w-6 h-6 text-indigo-400" />
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-white">
+              <h2 className="text-4xl md:text-5xl font-bold text-white">
                 Proyectos <span className="text-transparent bg-clip-text bg-linear-to-r from-indigo-400 to-purple-400">Destacados</span>
               </h2>
            </div>
@@ -141,11 +141,10 @@ export const ProjectsSection = () => {
 
         {/* =======================================================
            PROYECTOS PERSONALES 
-           ======================================================= */}
-        
+           ======================================================= */}      
         <div className="my-16 flex items-end gap-4">
            <div>
-           <h3 className="text-3xl font-bold text-white mb-4">
+           <h3 className="text-2xl font-bold text-white mb-4">
               Laboratorio & Prácticas
             </h3>
             <p className="text-slate-400 max-w-3xl mx-auto text-lg">
@@ -204,7 +203,6 @@ export const ProjectsSection = () => {
         {/* =======================================================
             OTROS PROYECTOS 
            ======================================================= */}
-        
         <div className="text-center my-16">
             <h3 className="text-2xl font-bold text-white inline-block relative mb-4">
               Otros Proyectos

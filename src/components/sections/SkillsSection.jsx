@@ -88,7 +88,7 @@ export const SkillsSection = () => (
         {/* HEADER */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
            <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
                     Stack <span className="text-transparent bg-clip-text bg-linear-to-r from-indigo-400 to-purple-400">Tecnológico</span>
                 </h2>
               <p className="text-slate-400 max-w-3xl text-lg">
