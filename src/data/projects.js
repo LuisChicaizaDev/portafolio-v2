@@ -141,7 +141,7 @@ export const PROJECTS_DATA = {
         demo: "https://v1-demo-blog-cafe.netlify.app/" 
       }
     },
-    {
+    /* {
       title: "Museo al Aire Libre",
       year: "2023",
       tags: ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery"],
@@ -150,6 +150,6 @@ export const PROJECTS_DATA = {
         repo: "", 
         demo: "http://oviedomuseoairelibre.com/" 
       }
-    }
+    } */
   ]
 };
