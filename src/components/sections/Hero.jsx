@@ -1,8 +1,11 @@
+import { useState } from 'react';
 import { ChevronRight, MailCheck, GraduationCap, Rocket, Atom } from 'lucide-react';
 import { Button } from '../ui/Button';
 import { Badge } from '../ui/Badge';
 
 export const Hero = () => {
+  // Estado para controlar la carga de la imagen
+  const [isHeroImageLoaded, setIsHeroImageLoaded] = useState(false);
   
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
@@ -70,10 +73,16 @@ export const Hero = () => {
 
                   {/* Foto  */}
                   <div className="absolute inset-0 rounded-4xl overflow-hidden border-2 border-slate-800 bg-slate-900 shadow-2xl z-10 group-hover:scale-[1.02] transition-all duration-500">
+                      {/* Skeleton */}
+                      <div className="absolute inset-0 bg-slate-800 animate-pulse" style={{ display: isHeroImageLoaded ? 'none' : 'block' }}></div>
+
                       <img 
                         src="https://img.freepik.com/psd-gratis/ilustracion-icono-contacto-aislada_23-2151903337.jpg?t=st=1769601962~exp=1769605562~hmac=c2458a21f4914926194b5bbc4e3864966b51f73a0c8a950e203c199ef3cf24a1&w=1480" 
                         alt="Luis Chicaiza Desarrollador Frontend" 
-                        className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500" 
+                        loading="eager" // Carga inmediata
+                        fetchPriority="high" // Alta prioridad
+                        className={`w-full h-full object-cover transition-all duration-800 ${isHeroImageLoaded ? 'opacity-100 blur-0' : 'opacity-0 blur-sm'}`} 
+                        onLoad={() => setIsHeroImageLoaded(true)} // Avisa cuando termina
                       />
                       
                       <div className="absolute inset-0 bg-linear-to-t from-slate-950 via-transparent to-transparent"></div>
