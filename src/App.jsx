@@ -1,4 +1,4 @@
-import { Hero } from "./components/sections/Hero"
+import { HeroSection } from "./components/sections/HeroSection"
 import { Navbar } from "./components/layout/Navbar"
 import { SkillsSection } from "./components/sections/SkillsSection"
 import { ProjectsSection } from "./components/sections/ProjectsSection"
@@ -13,7 +13,7 @@ function App() {
       
       <Navbar />
       <main>
-        <Hero />
+        <HeroSection />
         <SkillsSection />
         <ProjectsSection />
         <ExperienceSection />

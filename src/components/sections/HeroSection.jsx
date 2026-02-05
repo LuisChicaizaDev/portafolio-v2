@@ -3,7 +3,7 @@ import { ChevronRight, MailCheck, GraduationCap, Rocket, Atom } from 'lucide-rea
 import { Button } from '../ui/Button';
 import { Badge } from '../ui/Badge';
 
-export const Hero = () => {
+export const HeroSection = () => {
   // Estado para controlar la carga de la imagen
   const [isHeroImageLoaded, setIsHeroImageLoaded] = useState(false);
   
