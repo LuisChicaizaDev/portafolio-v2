@@ -141,7 +141,7 @@ export const ContactSection = () => {
               <div className="flex">
                 {/* Números de línea */}
                 <div className="flex flex-col text-slate-600 pr-4 select-none text-right">
-                  <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span>
+                  <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span className="md:hidden">18</span><span className="md:hidden">19</span><span className="md:hidden">20</span><span className="md:hidden">21</span><span className="md:hidden">22</span><span className="md:hidden">23</span>
                 </div>
                 {/* Código React */}
                 <div className="text-slate-300">
@@ -172,10 +172,7 @@ export const ContactSection = () => {
                   <div className="pl-12">
                     <span className="text-slate-500">&lt;/</span><span className="text-red-400">h1</span><span className="text-slate-500">&gt;</span>
                   </div>
-                  {/* Comentario */}
-                  <div className="pl-12 text-slate-500 italic">
-                    <span>{'{/*'}</span> Frontend Developer abierto a nuevos desafíos<span>{'*/}'}</span>
-                  </div>
+
                   {/* Componente */}
                   <div className="pl-12">
                     <span className="text-slate-500">&lt;</span><span className="text-yellow-300">Availability</span>
