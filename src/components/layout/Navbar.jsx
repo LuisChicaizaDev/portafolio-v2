@@ -47,7 +47,9 @@ export const Navbar = () => {
       {/* Overlay oscuro para móvil */}
       {isMobileMenuOpen && (
         <div 
-          className="fixed inset-0 bg-slate-950/40 backdrop-blur-sm z-40 transition-opacity"
+          className={`fixed inset-0 bg-slate-950/60 backdrop-blur-sm z-40 transition-all duration-300 ${
+            isMobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
+          }`}
           onClick={() => setIsMobileMenuOpen(false)}
         ></div>
       )}
@@ -105,31 +107,34 @@ export const Navbar = () => {
         </div>
 
         {/* --- MOBILE MENU OVERLAY --- */}
-        {isMobileMenuOpen && (
-          <div className="lg:hidden absolute top-full left-0 w-full mt-1 bg-slate-950 border border-slate-600/50 rounded-3xl p-6 flex flex-col gap-4 shadow-2xl">
-            {navLinks.map((link) =>(
-              <a 
-                key={link.href}
-                href={link.href}
-                onClick={() => setIsMobileMenuOpen(false)} 
-                className="block py-2 text-slate-300 hover:text-indigo-400"
-              >
-                {link.label}
-              </a>
-            ))}
-            <hr className="border-slate-800" />
-            {/* Iconos Sociales y CV */}
-            <div className="flex flex-col items-center justify-center gap-6">
+        <div className={`lg:hidden absolute top-full left-0 w-full mt-1 bg-slate-950 border border-slate-600/50 rounded-3xl p-6 flex flex-col gap-4 shadow-2xl origin-top transition-all duration-350 ease-in-out ${
+          isMobileMenuOpen 
+            ? "opacity-100 translate-y-0 visible scale-100" 
+            : "opacity-0 -translate-y-5 invisible scale-90"
+          }`}
+        >
+          {navLinks.map((link) =>(
+            <a 
+              key={link.href}
+              href={link.href}
+              onClick={() => setIsMobileMenuOpen(false)} 
+              className="block py-2 text-slate-300 hover:text-indigo-400"
+            >
+              {link.label}
+            </a>
+          ))}
+          <hr className="border-slate-800" />
+          {/* Iconos Sociales y CV */}
+          <div className="flex flex-col items-center justify-center gap-6">
 
-              <Button variant="secondary" className="gap-2" icon={FileText}>
-                Descargar CV
-              </Button>
+            <Button variant="secondary" className="gap-2" icon={FileText}>
+              Descargar CV
+            </Button>
 
-              {/* Iconos Sociales*/}
-              <SocialLinks iconSize="size-6" />
-            </div>
+            {/* Iconos Sociales*/}
+            <SocialLinks iconSize="size-6" />
           </div>
-        )}
+        </div>
       </nav>
     </>
   );
