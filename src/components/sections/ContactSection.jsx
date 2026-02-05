@@ -14,8 +14,11 @@ export const ContactSection = () => {
 
   return (
     <section id="contacto" className="py-24 px-6 bg-slate-950 relative overflow-hidden">
+
+      {/* Dots Pattern*/}
+      <div className='absolute inset-0 bg-[radial-gradient(#ffffff33_1px,transparent_1px)] bg-size-[60px_60px]'></div>
       
-      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-18 items-center relative z-10">
         
         {/* --- TEXTO Y BOTONES --- */}
         <div className="space-y-8">
@@ -40,7 +43,7 @@ export const ContactSection = () => {
           <div className="flex flex-col gap-4">
 
             {/* BOTÓN EMAIL  */}
-            <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-4 md:p-6 inline-flex justify-between grow md:items-center gap-4 md:gap-6 hover:border-indigo-500/30 transition-colors">
+            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-4 md:p-6 inline-flex justify-between grow md:items-center gap-4 md:gap-6 hover:border-indigo-500/50 transition-colors">
 
               <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6">
                 <div className="p-3 bg-indigo-500/10 rounded-full text-indigo-400">
@@ -63,7 +66,7 @@ export const ContactSection = () => {
               {/* Botón Copiar */}
               <button
                 onClick={handleCopy}
-                className="self-end p-2 hover:bg-slate-800 rounded-lg text-slate-400 hover:text-white transition-all active:scale-95 ml-0 md:ml-2"
+                className="self-end p-2 hover:bg-slate-800 rounded-lg text-slate-400 hover:text-white transition-all active:scale-95 ml-0 md:ml-2 cursor-pointer"
                 title="Copiar email"
               >
                 {copied ? <Check className="w-5 h-5 text-emerald-500" /> : <Copy className="w-5 h-5" />}
@@ -71,7 +74,7 @@ export const ContactSection = () => {
             </div>
 
             {/* BOTÓN LINKEDIN */}
-            <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-4 md:p-6 inline-flex justify-between grow md:items-center gap-4 md:gap-6 hover:border-indigo-500/30 transition-colors">
+            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-4 md:p-6 inline-flex justify-between grow md:items-center gap-4 md:gap-6 hover:border-indigo-500/50 transition-colors">
 
               <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6">
                 <div className="p-3 bg-indigo-500/10 rounded-full text-indigo-400">
