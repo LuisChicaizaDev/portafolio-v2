@@ -29,7 +29,7 @@ export const Hero = () => {
               
               {/* Badges */}
               <div className="flex flex-wrap gap-3 mb-8">
-                <Badge icon={GraduationCap} text="Estudiante Ing. Informática (UOC)" />
+                <Badge icon={GraduationCap} text="Estudiante Ing. Informática" />
                 <Badge icon={Rocket} text="Buscando nuevos retos profesionales" />
               </div>
 
@@ -42,7 +42,7 @@ export const Hero = () => {
                   Desarrollador Frontend
               </h1>
 
-              <p className="text-xl text-slate-400 mb-10 leading-relaxed max-w-xl">
+              <p className="text-xl text-slate-400 mb-10 leading-relaxed max-w-2xl">
                 Estudiante de Ingeniería Informática con <span className="font-bold text-indigo-300">+2 años de experiencia</span> en proyectos reales creando interfaces escalables y buscando un <span className="font-bold text-indigo-300">equipo de desarrollo de software</span> donde aportar valor y seguir creciendo.
               </p>
 
