@@ -111,9 +111,9 @@ export const ContactSection = () => {
 
         {/* --- VS CODE MOCKUP  --- */}
         <div className="relative group perspective-1000">
-          <div className="absolute -inset-1 bg-linear-to-tr from-indigo-800 via-purple-600 to-cyan-700 rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
+          <div className="absolute -inset-1 bg-linear-to-tr from-indigo-800/50 via-purple-600/50 to-cyan-800/50 rounded-2xl blur-sm opacity-20 group-hover:opacity-40 transition-opacity duration-500"></div>
 
-          <div className="relative bg-slate-900 border font-mono border-slate-800 rounded-xl overflow-hidden shadow-2xl transform transition-transform duration-500 hover:scale-[1.01]">
+          <div className="relative bg-slate-900 border font-mono border-slate-800 rounded-xl overflow-hidden shadow-2xl duration-500">
 
             {/* Barra superior (Tabs) */}
             <div className="flex items-center bg-slate-950/50 px-4 py-2 pb-0">
