@@ -31,7 +31,7 @@ export const Hero = () => {
               </div>
 
               {/* Título Principal */}
-              <span className="text-4xl md:text-6xl font-semibold text-white tracking-tight font-manrope">
+              <span className="text-4xl md:text-6xl font-bold text-white tracking-tight">
                 Hola, soy Luis
               </span>
 
@@ -61,7 +61,7 @@ export const Hero = () => {
               <div className="relative group w-72 h-80 sm:w-80 sm:h-96 perspective-1000">
                   
                   {/* Glow de fondo */}
-                  <div className="absolute -inset-4 bg-linear-to-tr from-indigo-500/20 via-purple-500/20 to-pink-500/20 rounded-4xl blur-2xl opacity-40 group-hover:opacity-60 transition duration-700"></div>
+                  <div className="absolute -inset-4 bg-linear-to-tr from-indigo-500/30 via-purple-500/20 to-pink-500/20 rounded-4xl blur-2xl opacity-40 group-hover:opacity-60 transition duration-700"></div>
 
                   {/* Wireframe */}
                   <div className="absolute inset-0 border-2 border-slate-700/50 rounded-4xl bg-slate-900/40 backdrop-blur-sm -rotate-6 translate-y-4 group-hover:-rotate-12 group-hover:-translate-x-4 group-hover:translate-y-8 transition-all duration-500 ease-out z-0">
@@ -87,7 +87,7 @@ export const Hero = () => {
 
                   {/* Snippet de Código */}
                   <div className="absolute bottom-8 -left-8 bg-slate-900/90 backdrop-blur-md p-4 rounded-xl border border-slate-700 shadow-2xl group-hover:-translate-x-4 group-hover:translate-y-2 transition-transform duration-500 z-20">
-                      <div className="flex gap-2 mb-2">
+                      <div className="flex gap-1 mb-2 animate-[pulse_4s_linear_infinite]">
                           <div className="w-2.5 h-2.5 rounded-full bg-red-500/80"></div>
                           <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></div>
                       </div>
