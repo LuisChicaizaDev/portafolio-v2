@@ -1,4 +1,4 @@
-import { Briefcase, GraduationCap, Calendar, CheckCircle2 } from 'lucide-react';
+import { Briefcase, GraduationCap, Calendar, CheckCircle2, Route } from 'lucide-react';
 import { EXPERIENCE_DATA } from '../../data/experience';
 import { Badge } from '../ui/Badge';
 
@@ -11,10 +11,15 @@ export const ExperienceSection = () => {
 
       <div className="max-w-6xl mx-auto relative z-10">
         {/* HEADER */}
-        <div className="mb-16 text-center md:text-left">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Experiencia <span className="text-transparent bg-clip-text bg-linear-to-r from-indigo-400 to-purple-400">& Formación</span>
-          </h2>
+        <div className="mb-20">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="p-2 bg-indigo-500/10 rounded-lg border border-indigo-500/20">
+              <Route className="w-6 h-6 text-indigo-400" />
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-white">
+              Experiencia <span className="text-transparent bg-clip-text bg-linear-to-r from-indigo-400 to-purple-400">& Formación</span>
+            </h2>
+          </div>
           <p className="text-slate-400 max-w-3xl text-lg">
             Mi recorrido técnico combinando el trabajo en entornos reales con la formación académica continua en ingeniería.
           </p>
