@@ -98,7 +98,7 @@ export const Navbar = () => {
 
             {/* --- MENU HAMBURGUESA --- */}
             <button 
-              className="lg:hidden p-2 text-slate-400 hover:text-white bg-slate-800 rounded-2xl cursor-pointer transition-all duration-300"
+              className="lg:hidden p-2 text-slate-400 hover:text-white bg-slate-800 rounded-lg cursor-pointer transition-all duration-300"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               {isMobileMenuOpen ? <X /> : <Menu />}
