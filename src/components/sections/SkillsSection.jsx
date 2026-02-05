@@ -1,4 +1,4 @@
-import { Code2, Layers, GraduationCap, Terminal, Zap } from 'lucide-react';
+import { Code2, Layers, GraduationCap, Terminal, Zap, Computer } from 'lucide-react';
 import { PROJECTS_DATA } from '../../data/projects';
 
 const TechIcons = {
@@ -83,17 +83,20 @@ export const SkillsSection = () => (
     <div className="max-w-7xl mx-auto relative z-10">
 
       {/* HEADER */}
-      <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
-        <div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Stack <span className="text-transparent bg-clip-text bg-linear-to-r from-indigo-400 to-purple-400">Tecnológico</span>
-          </h2>
-          <p className="text-slate-400 max-w-3xl text-lg">
-            Las tecnologías que uso en mi día a día. Este es el stack con el que me siento cómodo creando proyectos reales ahora mismo.
-            Un equilibrio entre lo que domino por mi experiencia laboral, protectos personales y lo que estoy perfeccionando en mis estudios.
-          </p>
+      <div className="mb-20">
+           <div className="flex items-center gap-3 mb-4">
+              <div className="p-2 bg-indigo-500/10 rounded-lg border border-indigo-500/20">
+                <Computer className="w-6 h-6 text-indigo-400" />
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold text-white">
+                Stack <span className="text-transparent bg-clip-text bg-linear-to-r from-indigo-400 to-purple-400">Tecnológico</span>
+              </h2>
+           </div>
+           <p className="text-slate-400 max-w-3xl text-lg">
+              Las tecnologías que uso en mi día a día. Este es el stack con el que me siento cómodo creando proyectos reales ahora mismo.
+              Un equilibrio entre lo que domino por mi experiencia laboral, protectos personales y lo que estoy perfeccionando en mis estudios.
+           </p>
         </div>
-      </div>
 
       {/* --- BENTO GRID --- */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
