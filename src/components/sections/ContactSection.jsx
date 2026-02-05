@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Mail, ExternalLink, Copy, Check } from 'lucide-react'
+import { Mail, ExternalLink, Copy, Check, Send } from 'lucide-react'
 import { FaLinkedinIn } from "react-icons/fa6";
 
 export const ContactSection = () => {
@@ -19,17 +19,24 @@ export const ContactSection = () => {
         
         {/* --- TEXTO Y BOTONES --- */}
         <div className="space-y-8">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            ¿Quieres <br />
-            <span className="text-transparent bg-clip-text bg-linear-to-r from-indigo-400 to-purple-400">
-              contactarme?
-            </span>
-          </h2>
-
-          <p className="text-slate-400 text-lg leading-relaxed max-w-3xl">
-            Busco sumarme a un equipo donde pueda aportar mis conocimientos y seguir creciendo. Si necesitas a alguien detallista, curioso y con muchas ganas de construir y superarse, estoy disponible.
-          </p>
-
+          {/* HEADER */}
+          <div className="mb-20">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="p-2 bg-indigo-500/10 rounded-lg border border-indigo-500/20">
+                <Send className="w-6 h-6 text-indigo-400" />
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold text-white">
+                ¿Quieres <br />
+                <span className="text-transparent bg-clip-text bg-linear-to-r from-indigo-400 to-purple-400">
+                  contactarme?
+                </span>
+              </h2>
+            </div>
+            <p className="text-slate-400 max-w-3xl text-lg">
+              Busco sumarme a un equipo donde pueda aportar mis conocimientos y seguir creciendo. Si necesitas a alguien detallista, curioso y con muchas ganas de construir y superarse, estoy disponible.
+            </p>
+          </div>
+    
           <div className="flex flex-col gap-4">
 
             {/* BOTÓN EMAIL  */}
