@@ -37,7 +37,7 @@ export const HeroSection = () => {
                 Desarrollador <span className="text-transparent bg-clip-text bg-linear-to-r from-indigo-400 to-purple-400">Frontend</span>
               </h1>
 
-              <p className="text-xl text-slate-400 mb-10 leading-relaxed max-w-2xl">
+              <p className="text-lg text-slate-400 mb-10 leading-relaxed max-w-2xl">
                 Estudiante de Ingeniería Informática con <span className="font-bold text-indigo-300">+2 años de experiencia</span> en proyectos reales. Me caracterizo por ser resolutivo: sé investigar, enfrentar problemas y <span className="font-bold text-indigo-300">sacar el trabajo adelante</span>.
                 Busco un equipo técnico donde pueda aportar esta autonomía y seguir aprendiendo y creciendo profesionalmente.
               </p>
@@ -82,12 +82,6 @@ export const HeroSection = () => {
                       />
                       
                       <div className="absolute inset-0 bg-linear-to-t from-slate-950 via-transparent to-transparent"></div>
-                  </div>
-
-                  {/* Elementos Flotantes */}
-                  {/* React Logo  */}
-                  <div className="absolute -top-6 -right-6 bg-slate-900 p-3 rounded-2xl border border-slate-700 shadow-xl group-hover:translate-x-2 group-hover:-translate-y-2 transition-transform duration-500 z-20 flex items-center justify-center">
-                      <Atom  className="w-8 h-8 text-sky-400" />
                   </div>
 
                   {/* Snippet de Código */}
