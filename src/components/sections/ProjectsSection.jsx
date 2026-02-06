@@ -30,110 +30,81 @@ export const ProjectsSection = () => {
         {/* =======================================================
             CASOS DE ESTUDIO 
            ======================================================= */}
-        <div className="grid gap-12 mb-30">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-30">
            {featuredCases.map((project) => (
              <article 
                key={project.title} 
-               className="group relative bg-slate-900/50 border border-slate-800 rounded-3xl overflow-hidden hover:border-indigo-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-500/10"
+               className="group relative bg-slate-900/60 border border-slate-800 rounded-3xl overflow-hidden hover:border-indigo-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-500/20"
              >
-                <div className="flex flex-col lg:flex-row h-full">
+                <div className="flex flex-col gap-6 p-6 md:p-8">
                   
-                  {/* COLUMNA IZQUIERDA: IMAGEN */}
-                  <div className="w-full h-auto lg:h-auto relative overflow-hidden bg-slate-950">
-                     {/* Badge Flotante "CASO DE ESTUDIO" */}
-                     <div className="absolute top-6 left-6 z-20">
-                        <span className="inline-flex items-center gap-2 bg-indigo-600 text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg shadow-indigo-600/20 tracking-wide uppercase">
-                           <Zap className="w-3 h-3 fill-current" />
-                           Caso de Estudio: {project.studyType}
-                        </span>
-                     </div>
-                     
+                  {/* VISTA PREVIA */}
+                  <div className="order-2 w-full relative overflow-hidden rounded-2xl">
                      <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-slate-900/0 transition-colors z-10" />
                      <img 
                        src={project.image} 
                        alt={project.title} 
                        loading="lazy"
-                       className="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                       className="w-full h-full object-contain rounded-2xl border border-slate-400 transform group-hover:scale-105 transition-transform duration-700 ease-out"
                      />
                   </div>
 
-                  {/*  CONTENIDO */}
-                  <div className="w-full p-6 lg:p-8 flex flex-col justify-center">
-                     
-                     <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-indigo-400 transition-colors">
-                       {project.title}
-                     </h3>
-                     
-                     <p className="text-slate-400 text-base leading-relaxed mb-8">
-                       {project.description}
-                     </p>
+                  {/* CONTENIDO */}
+                 <div className="order-1 w-full flex flex-col">
 
-                     {/*LOGROS*/}
-                     {project.achievements && (
-                       <div className="bg-slate-950/50 border border-slate-800 rounded-xl p-4 mb-8">
-                          <h4 className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-4 flex items-center gap-2">
-                            <CheckCircle2 className="w-4 h-4" /> Logros
-                          </h4>
-                          <ul className="space-y-3">
-                             {project.achievements.map((item, i) => (
-                               <li key={i} className="flex items-start gap-3 text-sm text-slate-300">
-                                  <div className="mt-1 w-1.5 h-1.5 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.6)]"></div>
-                                  {item}
-                               </li>
-                             ))}
-                          </ul>
-                       </div>
+                   <div className="flex items-center justify-between gap-4 mb-6">
+                     <span className="inline-flex items-center gap-2 bg-indigo-500/15 text-indigo-200 text-[11px] font-semibold px-4 py-2 rounded-full tracking-wide uppercase border border-indigo-500/20">
+                       <Zap className="w-3 h-3 fill-current" />
+                       Caso de Estudio: {project.studyType}
+                     </span>
+                     {project.links.demo && (
+                       <a
+                         href={project.links.demo}
+                         target="_blank"
+                         rel="noopener noreferrer"
+                         aria-label="Ver resultado"
+                         className="size-10 grid place-items-center rounded-full border border-indigo-500 bg-indigo-600 hover:bg-indigo-500 text-white focus:ring-indigo-500"
+                       >
+                         <ExternalLink className="size-5" />
+                       </a>
                      )}
+                   </div>
 
-                     {/* TAGS */}
-                     <div className="flex flex-wrap gap-2 mb-8">
-                        {project.tags.map(tag => (
-                          <span key={tag} className="text-xs font-medium text-slate-400 bg-slate-950 border border-slate-800 px-2 py-1 rounded">
-                            {tag}
-                          </span>
-                        ))}
+                   <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-indigo-300 transition-colors">
+                     {project.title}
+                   </h3>
+
+                   <p className="text-slate-400 text-sm leading-relaxed mb-6">
+                     {project.description}
+                   </p>
+
+                   {/* TAGS */}
+                   <div className="flex flex-wrap gap-2 mb-6">
+                     {project.tags.map(tag => (
+                       <span key={tag} className="text-xs font-medium text-slate-400 bg-slate-950 border border-slate-800 px-2 py-1 rounded">
+                         {tag}
+                       </span>
+                     ))}
+                   </div>
+
+                   {/*LOGROS*/}
+                   {project.achievements && (
+                     <div className="bg-slate-950/60 border border-slate-800 rounded-2xl p-4 mb-6">
+                       <h4 className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-4 flex items-center gap-2">
+                         <CheckCircle2 className="w-4 h-4" /> Logros
+                       </h4>
+                       <ul className="space-y-3">
+                         {project.achievements.map((item, i) => (
+                           <li key={i} className="flex items-start gap-3 text-sm text-slate-300">
+                             <div className="mt-1 w-1.5 h-1.5 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.6)]"></div>
+                             {item}
+                           </li>
+                         ))}
+                       </ul>
                      </div>
+                   )}
 
-                     {/* BOTONES */}
-                     <div className="flex flex-wrap gap-4">
-                        {project.links.demo && (
-                          <Button 
-                            variant="primary" 
-                            href={project.links.demo} 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            icon={ExternalLink}
-                          >
-                            Ver Resultado
-                          </Button>
-                        )}
-                        {/* Botón Figma si existe */}
-                        {project.links.design && (
-                           <Button 
-                             variant="outline" 
-                             href={project.links.design} 
-                             target="_blank" 
-                             rel="noopener noreferrer"
-                             icon={Palette}
-                           >
-                             Ver Diseño
-                           </Button>
-                        )}
-                        {/* Botón Repo (si lo hubiera en futuro) */}
-                        {project.links.repo && (
-                           <Button 
-                             variant="outline" 
-                             href={project.links.repo} 
-                             target="_blank" 
-                             rel="noopener noreferrer"
-                             icon={FiGithub}
-                           >
-                             Código
-                           </Button>
-                        )}
-                     </div>
-
-                  </div>
+                 </div>
                 </div>
              </article>
            ))}

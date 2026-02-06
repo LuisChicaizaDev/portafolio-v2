@@ -65,6 +65,7 @@ export const PROJECTS_DATA = {
       links: {
         demo: "https://aerakoreanbeauty.com/",
         repo: "", // No disponible
+        design: "",
       },
       image: "/assets/img/proyecto-aera.webp"
     },
@@ -76,13 +77,14 @@ export const PROJECTS_DATA = {
       description: "Página de enlaces rápidos desarrollada para Aera, que centraliza enlaces clave para su negocio. Diseño minimalista alineado a la identidad de la marca. El mapa de Google Maps se carga de forma diferida mediante JavaScript para optimizar el rendimiento.",
       achievements: [
         "Carga diferida (Lazy Load) de Google Maps",
-        "Puntuación 99/100 en Core Web Vitals",
+        "Puntuación 99/100 en PageSpeed Insights",
         "Diseño Minimalista 'Mobile First'"
       ],
       tags: ["HTML & Sass", "JavaScript", "Figma"],
       links: {
         demo: "https://aerakoreanbeauty.com/linkbio/",
         repo: "",
+        design: "",
       },
       image: "/assets/img/proyecto-aera-links.webp"
     },
