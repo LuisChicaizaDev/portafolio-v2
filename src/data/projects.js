@@ -2,7 +2,7 @@ export const PROJECTS_DATA = {
   skills: {
     lenguajes_core: ["HTML5", "CSS3", "JavaScript", "MySQL", "PHP", "Bootstrap", "Sass"],
     focus_actual: ["React", "Tailwind CSS"],
-    herramientas: ["Git", "GitHub", "Figma", "WordPress", "VSC"]
+    herramientas: ["Git", "GitHub", "Figma", "Supabase", "WordPress", "VSC"]
   },
  // PROYECTOS DESTACADOS
  projects: [

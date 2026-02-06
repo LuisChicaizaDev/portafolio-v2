@@ -41,9 +41,9 @@ const TechIcons = {
   WordPress: (props) => (
     <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" {...props}><title>WordPress</title><path d="M21.469 6.825c.84 1.537 1.318 3.3 1.318 5.175 0 3.979-2.156 7.456-5.363 9.325l3.295-9.527c.615-1.54.82-2.771.82-3.864 0-.405-.026-.78-.07-1.11m-7.981.105c.647-.03 1.232-.105 1.232-.105.582-.075.514-.93-.067-.899 0 0-1.755.135-2.88.135-1.064 0-2.85-.15-2.85-.15-.585-.03-.661.855-.075.885 0 0 .54.061 1.125.09l1.68 4.605-2.37 7.08L5.354 6.9c.649-.03 1.234-.1 1.234-.1.585-.075.516-.93-.065-.896 0 0-1.746.138-2.874.138-.2 0-.438-.008-.69-.015C4.911 3.15 8.235 1.215 12 1.215c2.809 0 5.365 1.072 7.286 2.833-.046-.003-.091-.009-.141-.009-1.06 0-1.812.923-1.812 1.914 0 .89.513 1.643 1.06 2.531.411.72.89 1.643.89 2.977 0 .915-.354 1.994-.821 3.479l-1.075 3.585-3.9-11.61.001.014zM12 22.784c-1.059 0-2.081-.153-3.048-.437l3.237-9.406 3.315 9.087c.024.053.05.101.078.149-1.12.393-2.325.609-3.582.609M1.211 12c0-1.564.336-3.05.935-4.39L7.29 21.709C3.694 19.96 1.212 16.271 1.211 12M12 0C5.385 0 0 5.385 0 12s5.385 12 12 12 12-5.385 12-12S18.615 0 12 0" /></svg>
   ),
-  VSC: (props) => (
-    <svg viewBox="0 0 24 24" fill="currentColor" {...props}><path d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.245.08L.29 7.351A1.013 1.013 0 0 0 .3 8.875l8.022 6.187-8.022 6.186a1.013 1.013 0 0 0-.01 1.524l1.38 1.269c.35.32.89.347 1.245.08l4.12-3.128 9.46 8.63a1.494 1.494 0 0 0 1.705.29l4.94-2.377A1.5 1.5 0 0 0 24 21.181V2.819a1.5 1.5 0 0 0-.85-1.354v1.122zM12.21 12l8.22 6.474V5.526L12.21 12z" /></svg>
-  )
+  Supabase: (props) => (
+    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" {...props}><title>Supabase</title><path d="M11.9 1.036c-.015-.986-1.26-1.41-1.874-.637L.764 12.05C-.33 13.427.65 15.455 2.409 15.455h9.579l.113 7.51c.014.985 1.259 1.408 1.873.636l9.262-11.653c1.093-1.375.113-3.403-1.645-3.403h-9.642z"/></svg>
+  ),
 };
   
 // FUNCIÓN DE SELECCIÓN DE ICONOS 
@@ -67,6 +67,7 @@ const getSkillIcon = (skillName) => {
     case lower.includes('github'): return <TechIcons.GitHub className="size-5 text-white" />;
     case lower.includes('git'): return <TechIcons.Git className="size-5 text-orange-500" />;
     case lower.includes('figma'): return <TechIcons.Figma className="size-5 text-[#F24E1E]" />;
+    case lower.includes('supabase'): return <TechIcons.Supabase className="size-5 text-[#3FCF8E]" />;
     case lower.includes('wordpress'): return <TechIcons.WordPress className="size-5 text-blue-400" />;
 
     default: return <Code2 className="size-5 text-slate-400" />;
@@ -168,11 +169,12 @@ export const SkillsSection = () => (
         {/* Base técnica */}
         <div className="md:col-span-1 group relative p-8 bg-slate-900 border border-slate-800 rounded-3xl hover:border-slate-700 transition-colors">
           <div className="absolute inset-0 bg-linear-to-b from-indigo-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl" />
-          <div className="flex items-center gap-3 mb-6">
+          
+          <div className="flex items-center gap-3 mb-6 relative z-10">
             <div className="p-2.5 bg-orange-500/10 rounded-lg text-orange-400"><Layers className="w-5 h-5" /></div>
             <h3 className="text-xl font-bold text-slate-100">Mi Base Técnica</h3>
           </div>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 relative z-10">
             {PROJECTS_DATA.skills.lenguajes_core.map(skill => (
               <span key={skill} className="text-xs font-medium text-slate-400 bg-slate-950 border border-slate-800 px-3 py-1.5 rounded-md flex items-center gap-2 hover:text-slate-200 hover:border-slate-600 transition-colors cursor-default">
                 {getSkillIcon(skill)} {skill}
@@ -184,11 +186,12 @@ export const SkillsSection = () => (
         {/*  HERRAMIENTAS */}
         <div className="md:col-span-1 group relative p-8 bg-slate-900 border border-slate-800 rounded-3xl hover:border-slate-700 transition-colors">
           <div className="absolute inset-0 bg-linear-to-b from-indigo-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl" />
-          <div className="flex items-center gap-3 mb-6">
+          
+          <div className="flex items-center gap-3 mb-6 relative z-10">
             <div className="p-2.5 bg-purple-500/10 rounded-lg text-purple-400"><Terminal className="w-5 h-5" /></div>
             <h3 className="text-xl font-bold text-slate-100">Mis Herramientas</h3>
           </div>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 relative z-10">
             {PROJECTS_DATA.skills.herramientas.map(tool => (
               <span key={tool} className="text-xs font-medium text-slate-400 bg-slate-950 border border-slate-800 px-3 py-1.5 rounded-md flex items-center gap-1.5 hover:border-purple-300/50 transition-colors cursor-default">
                 {getSkillIcon(tool)} {tool}
