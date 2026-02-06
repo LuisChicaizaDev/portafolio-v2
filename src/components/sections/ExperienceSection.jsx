@@ -5,7 +5,7 @@ import { Badge } from '../ui/Badge';
 export const ExperienceSection = () => {
 
   return (
-    <section id="trayectoria" className="py-24 px-6 bg-slate-950 relative overflow-hidden">
+    <section id="experiencia" className="py-24 px-6 bg-slate-950 relative overflow-hidden">
       
       <div className="max-w-6xl mx-auto relative z-10">
         {/* HEADER */}

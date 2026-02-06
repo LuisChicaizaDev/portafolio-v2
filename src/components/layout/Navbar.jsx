@@ -30,7 +30,7 @@ export const Navbar = () => {
   const navLinks = [
     { href: "#inicio", label: "Inicio" },
     { href: "#proyectos", label: "Proyectos" },
-    { href: "#trayectoria", label: "Trayectoria" },
+    { href: "#experiencia", label: "Experiencia" },
     { href: "#contacto", label: "Contacto" },
   ];
 
