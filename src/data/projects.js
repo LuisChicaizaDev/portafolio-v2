@@ -55,7 +55,7 @@ export const PROJECTS_DATA = {
       year: "2024 | Actualizado 2026",
       isFeatured: true, 
       studyType: "Migración & SEO",
-      description: "Sitio web para un estudio de cosmética coreana, diseñado desde Figma y desarrollado con HTML, Sass y JavaScript. En 2025 lo migré a PHP para mejorar su mantenimiento y estructura, manteniendo URLs limpias, el SEO existente y aplicando redirecciones 301.",
+      description: "Sitio web para un estudio de cosmética coreana, diseñado desde Figma y desarrollado con HTML, Sass y JavaScript. En 2025, migré el proyecto a una arquitectura PHP modular para facilitar su mantenimiento, manteniendo URLs limpias, el SEO existente y aplicando redirecciones 301.",
       achievements: [
         "De HTML Estático → PHP Modular",
         "100% SEO Preservado (301 Redirects)",

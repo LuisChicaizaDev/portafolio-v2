@@ -23,7 +23,8 @@ export const ProjectsSection = () => {
               </h2>
            </div>
            <p className="text-slate-400 max-w-3xl text-lg">
-              Más allá del código, me motiva resolver problemas y ayudar. Aquí muestro cómo apliqué mis conocimientos para impulsar un negocio familiar, utilizando este reto real como plataforma de aprendizaje para dominar todo el ciclo de desarrollo de un proyecto.
+              Más allá del código, me motiva <span className="font-bold text-indigo-300">crear utilidad real</span>. 
+              Un ejemplo es la digitalización de un negocio familiar, un proyecto donde <span className="font-bold text-indigo-300">asumí la responsabilidad de todo el ciclo de desarrollo</span> generando un impacto directo en el crecimiento del negocio.
            </p>
         </div>
 
