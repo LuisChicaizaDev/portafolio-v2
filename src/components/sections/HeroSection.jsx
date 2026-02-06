@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ChevronRight, MailCheck, GraduationCap, Rocket, Atom } from 'lucide-react';
+import { ChevronRight, MailCheck, GraduationCap, Atom } from 'lucide-react';
 import { Button } from '../ui/Button';
 import { Badge } from '../ui/Badge';
 
@@ -29,21 +29,17 @@ export const HeroSection = () => {
               
               {/* Badges */}
               <div className="flex flex-wrap gap-3 mb-8">
-                <Badge icon={GraduationCap} text="Estudiante Ing. Informática" />
-                <Badge icon={Rocket} text="Buscando nuevos retos profesionales" />
+                <Badge icon={GraduationCap} text="Estudiante de Ingeniería Informática" />
               </div>
 
               {/* Título Principal */}
-              <span className="text-4xl md:text-6xl font-bold text-white tracking-tight">
-                Hola, soy Luis
-              </span>
-
-              <h1 className="text-5xl md:text-7xl font-extrabold md:text-center lg:text-start text-transparent bg-clip-text bg-linear-to-r from-indigo-400 to-purple-400 mb-6 tracking-tight">
-                  Desarrollador Frontend
+              <h1 className="text-5xl md:text-7xl font-extrabold md:text-center lg:text-start text-white mb-6 tracking-tight">
+                Desarrollador <span className="text-transparent bg-clip-text bg-linear-to-r from-indigo-400 to-purple-400">Frontend</span>
               </h1>
 
               <p className="text-xl text-slate-400 mb-10 leading-relaxed max-w-2xl">
-                Estudiante de Ingeniería Informática con <span className="font-bold text-indigo-300">+2 años de experiencia</span> en proyectos reales creando interfaces escalables y buscando un <span className="font-bold text-indigo-300">equipo de desarrollo de software</span> donde aportar valor y seguir creciendo.
+                Estudiante de Ingeniería Informática con <span className="font-bold text-indigo-300">+2 años de experiencia</span> en proyectos reales. Me caracterizo por ser resolutivo: sé investigar, enfrentar problemas y <span className="font-bold text-indigo-300">sacar el trabajo adelante</span>.
+                Busco un equipo técnico donde pueda aportar esta autonomía y seguir aprendiendo y creciendo profesionalmente.
               </p>
 
               {/* Botones de Acción */}
