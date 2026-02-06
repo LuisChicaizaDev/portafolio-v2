@@ -93,8 +93,7 @@ export const SkillsSection = () => (
           </h2>
         </div>
         <p className="text-slate-400 max-w-3xl text-lg">
-          Las tecnologías que uso en mi día a día. Este es el stack con el que me siento cómodo creando proyectos reales ahora mismo.
-          Un equilibrio entre lo que domino por mi experiencia laboral, protectos personales y lo que estoy perfeccionando en mis estudios.
+          Las tecnologías que utilizo en mi día a día. Es el stack con el que me siento cómodo <span className="font-bold text-indigo-300">construyendo proyectos reales</span>: es un equilibrio entre lo que ya domino por experiencia laboral y las nuevas herramientas que estoy perfeccionando a través de mis estudios y el <span className="font-bold text-indigo-300">aprendizaje continuo</span>.
         </p>
       </div>
 
@@ -119,10 +118,10 @@ export const SkillsSection = () => (
             <div className="relative pl-12">
               <div className="absolute left-3 top-1.5 w-4 h-4 rounded-full bg-slate-950 border-2 border-indigo-500 z-10 shadow-[0_0_10px_rgba(99,102,241,0.5)]"></div>
               <div className="flex flex-col">
-                <span className="text-xs text-indigo-400 mb-1">2026</span>
+                <span className="text-xs text-indigo-400 mb-1">Feb 2026 - Actualidad</span>
                 <h4 className="font-bold text-white text-lg leading-tight mb-1">Grado Ingeniería Informática</h4>
                 <span className="text-slate-400 text-sm">UOC</span>
-                <span className="mt-2 text-[12px] bg-indigo-900/30 text-indigo-200 px-2 py-0.5 rounded w-fit">En curso</span>
+                <span className="mt-2 text-[12px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2 py-0.5 rounded w-fit">En curso</span>
               </div>
             </div>
 
@@ -147,13 +146,15 @@ export const SkillsSection = () => (
               <div className="flex items-center gap-3">
                 <div className="p-3 bg-sky-500/10 rounded-xl text-sky-400"><Zap className="w-6 h-6" /></div>
                 <div>
-                  <h3 className="text-xl font-bold text-slate-100">Mi foco actual</h3>
-                  <p className="text-sm text-slate-500">Tecnologías modernas en las que estoy ampliando mi conocimiento</p>
+                  <h3 className="text-xl font-bold text-slate-100">Desarrollo Frontend</h3>
+                  <p className="text-base text-slate-400 my-2">
+                    Son las herramientas con las que <span className="font-bold text-indigo-300">doy vida a mis proyectos</span>. Con ellas combino lógica y diseño para construir interfaces modernas y funcionales, buscando escribir mejor código con cada proyecto.
+                  </p>
                 </div>
               </div>
             </div>
 
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap justify-center gap-3">
               {PROJECTS_DATA.skills.focus_actual.map(skill => (
                 <div key={skill} className="flex items-center gap-2 px-4 py-2 bg-slate-800/50 border border-slate-700 hover:border-sky-500/50 hover:bg-slate-800 text-slate-200 rounded-xl transition-all duration-300 group/skill cursor-default">
                   {getSkillIcon(skill)}
@@ -169,7 +170,7 @@ export const SkillsSection = () => (
           <div className="absolute inset-0 bg-linear-to-b from-indigo-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl" />
           <div className="flex items-center gap-3 mb-6">
             <div className="p-2.5 bg-orange-500/10 rounded-lg text-orange-400"><Layers className="w-5 h-5" /></div>
-            <h3 className="font-bold text-slate-200">Mi base técnica</h3>
+            <h3 className="text-xl font-bold text-slate-100">Mi Base Técnica</h3>
           </div>
           <div className="flex flex-wrap gap-2">
             {PROJECTS_DATA.skills.lenguajes_core.map(skill => (
@@ -185,7 +186,7 @@ export const SkillsSection = () => (
           <div className="absolute inset-0 bg-linear-to-b from-indigo-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl" />
           <div className="flex items-center gap-3 mb-6">
             <div className="p-2.5 bg-purple-500/10 rounded-lg text-purple-400"><Terminal className="w-5 h-5" /></div>
-            <h3 className="font-bold text-slate-200">Mis herramientas</h3>
+            <h3 className="text-xl font-bold text-slate-100">Mis Herramientas</h3>
           </div>
           <div className="flex flex-wrap gap-2">
             {PROJECTS_DATA.skills.herramientas.map(tool => (
