@@ -66,7 +66,7 @@ export const ProjectsSection = () => {
                          aria-label="Ver resultado"
                          className="size-10 grid place-items-center rounded-full border border-indigo-500 bg-indigo-600 hover:bg-indigo-500 text-white focus:ring-indigo-500"
                        >
-                         <ExternalLink className="size-5" />
+                        <ExternalLink className="size-5" />
                        </a>
                      )}
                    </div>

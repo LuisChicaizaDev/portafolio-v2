@@ -55,7 +55,7 @@ export const PROJECTS_DATA = {
       year: "2024 | Actualizado 2026",
       isFeatured: true, 
       studyType: "Migración & SEO",
-      description: "Sitio web para un estudio de cosmética coreana, diseñado desde Figma y desarrollado con HTML, Sass y JavaScript. En 2025, migré el proyecto a una arquitectura PHP modular para facilitar su mantenimiento, manteniendo URLs limpias, el SEO existente y aplicando redirecciones 301.",
+      description: "Sitio web diseñado en Figma y desarrollado con HTML, Sass y JavaScript. En 2025, migré el proyecto a una arquitectura PHP modular para facilitar su mantenimiento, manteniendo URLs limpias, el SEO existente y aplicando redirecciones 301.",
       achievements: [
         "De HTML Estático → PHP Modular",
         "100% SEO Preservado (301 Redirects)",
@@ -74,7 +74,7 @@ export const PROJECTS_DATA = {
       year: "2025",
       isFeatured: true,
       studyType: "Optimización Web",
-      description: "Página de enlaces rápidos desarrollada para Aera, que centraliza enlaces clave para su negocio. Diseño minimalista alineado a la identidad de la marca. El mapa de Google Maps se carga de forma diferida mediante JavaScript para optimizar el rendimiento.",
+      description: "Alternativa a Linktree totalmente personalizada para tener el control total sobre el diseño y la velocidad. El mapa de Google Maps se implementó con carga diferida (Lazy Load) para optimizar el rendimiento.",
       achievements: [
         "Carga diferida (Lazy Load) de Google Maps",
         "Puntuación 99/100 en PageSpeed Insights",
