@@ -114,17 +114,14 @@ export const ProjectsSection = () => {
         {/* =======================================================
            PROYECTOS PERSONALES 
            ======================================================= */}      
-        <div className="my-16 flex items-end gap-4">
-           <div>
-           <h3 className="text-2xl font-bold text-white mb-4">
-              Laboratorio & Prácticas
-            </h3>
-            <p className="text-slate-400 max-w-3xl mx-auto text-lg">
-              Desde mi Trabajo Final de Curso hasta mis últimos experimentos con IA. 
-              Aquí es donde pruebo nuevas tecnologías y consolido conocimientos.
-            </p>
-           </div>
-           <div className="h-px grow bg-slate-800 mb-3"></div>
+        <div className="text-center my-16">
+          <h3 className="text-2xl font-bold text-white inline-block relative mb-4">
+            Laboratorio & Prácticas
+          </h3>
+          <p className="text-slate-400 max-w-3xl mx-auto text-lg">
+            
+            Aquí es donde pruebo nuevas tecnologías y consolido conocimientos.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-30">
@@ -169,76 +166,6 @@ export const ProjectsSection = () => {
                 </div>
               </div>
             </article>
-          ))}
-        </div>
-
-        {/* =======================================================
-            OTROS PROYECTOS 
-           ======================================================= */}
-        <div className="text-center my-16">
-            <h3 className="text-2xl font-bold text-white inline-block relative mb-4">
-              Otros Proyectos
-            </h3>
-            <p className="text-slate-400 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
-              Pequeños proyectos enfocados en experimentar y dominar conceptos específicos (CSS Grid, Flexbox React Hooks, Maquetación) que me han servido como primera toma de contacto para probar nuevas tecnologías.
-            </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-          {PROJECTS_DATA.other_projects.map((project) => (
-            <div 
-              key={project.title}
-              className="group bg-slate-900/50 border border-slate-800 rounded-xl p-6 hover:-translate-y-1 transition-all duration-300 hover:shadow-xl hover:shadow-indigo-500/5 hover:border-slate-700"
-            >
-               {/* HEADER CARD: CARPETA + LINKS */}
-               <div className="flex justify-between items-start mb-6">
-                  <div className="text-indigo-500 group-hover:text-indigo-400 transition-colors">
-                     <Folder className="size-8" strokeWidth={1.5} />
-                  </div>
-                  <div className="flex gap-4">
-                     {project.links.repo && (
-                       <a 
-                         href={project.links.repo} 
-                         target="_blank" 
-                         rel="noopener noreferrer" 
-                         className="text-slate-400 hover:text-white transition-colors"
-                         aria-label="Ver Código"
-                       >
-                         <FiGithub className="w-5 h-5" />
-                       </a>
-                     )}
-                     {project.links.demo && (
-                       <a 
-                         href={project.links.demo} 
-                         target="_blank" 
-                         rel="noopener noreferrer" 
-                         className="text-slate-400 hover:text-white transition-colors"
-                         aria-label="Ver Demo"
-                       >
-                         <ExternalLink className="w-5 h-5" />
-                       </a>
-                     )}
-                  </div>
-               </div>
-               
-               {/* TITULO & DESCRIPCION */}
-               <h4 className="text-lg font-bold text-slate-100 mb-3 group-hover:text-indigo-400 transition-colors">
-                 {project.title}
-               </h4>
-               
-               <p className="text-sm h-auto text-slate-400 leading-relaxed mb-6 overflow-hidden">
-                 {project.description}
-               </p>
-               
-               {/* TAGS AL PIE */}
-               <div className="flex flex-wrap gap-2 mt-auto">
-                  {project.tags.map(tag => (
-                    <span key={tag} className="px-2 py-1 text-xs font-medium text-slate-400 bg-slate-950 rounded border border-slate-800">
-                      {tag}
-                    </span>
-                  ))}
-               </div>
-            </div>
           ))}
         </div>
 

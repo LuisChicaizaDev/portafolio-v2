@@ -89,69 +89,15 @@ export const PROJECTS_DATA = {
       image: "/assets/img/proyecto-aera-links.webp"
     },
     {
-      title: "Mi Portafolio v1",
+      title: "Portafolio v1",
       year: "2024 | Actualizado 2025",
-      description: "Portafolio web personal diseñado desde Figma y desarrollado con HTML, Sass, JavaScript y Bootstrap. Implementa la carga dinámica de proyectos mediante fetch y el consumo de datos desde JSON. Refleja estilo, enfoque técnico y evolución como desarrollador.",
+      description: "Mi primer ortafolio web personal diseñado desde Figma y desarrollado con HTML, Sass, JavaScript y Bootstrap. Implementa la carga dinámica de proyectos mediante fetch y el consumo de datos desde JSON. Refleja estilo, enfoque técnico y evolución como desarrollador.",
       tags: ["HTML & Sass", "Bootstrap", "JavaScript", "Figma"],
       links: {
-        demo: "https://github.com/LuisChicaizaDev/portafolio", 
+        demo: "https://luischicaizadev.github.io/", 
         repo: "https://github.com/LuisChicaizaDev/portafolio",
       },
       image: "/assets/img/proyecto-portafolio.webp"
     }
   ],
-
-  //  OTROS PROYECTOS 
-  other_projects: [
-    {
-      title: "Perfil Bento Tailwind",
-      year: "2025",
-      tags: ["Tailwind CSS", "HTML"],
-      description: "Proyecto práctico basado en el curso Tailwind CSS 4 de MiduDev, enfocado en el uso de utility classes, diseño responsive y la creación de una Bento Grid personalizada.",
-      links: { 
-        repo: "https://github.com/LuisChicaizaDev/perfil-bento-tailwind", 
-        demo: "https://perfil-bento-tailwind.netlify.app/" 
-      }
-    },
-    {
-      title: "App Tareas React",
-      year: "2025",
-      tags: ["React", "CSS"],
-      description: "Proyecto realizado como parte de un curso de React de freeCodeCamp, con mejoras personales como persistencia de datos en localStorage y contadores dinámicos. Aplicación para gestionar tareas, con componentes reutilizables y manejo de estado con useState.",
-      links: { 
-        repo: "https://github.com/LuisChicaizaDev/app-tareas-react", 
-        demo: "https://app-tareas-react-sage.vercel.app/" 
-      }
-    },
-    {
-      title: "Festival de Música",
-      year: "2024",
-      tags: ["HTML", "Sass", "JavaScript"],
-      description: "Pagina desarrollada como práctica inicial con Sass, donde apliqué variables y mixins. El proyecto fue clave para familiarizarme con un preprocesador CSS. También incorporé interactividad con JavaScript para mejorar la experiencia del usuario.",
-      links: { 
-        repo: "https://github.com/LuisChicaizaDev/festival-musica", 
-        demo: "https://v-festival-musica.netlify.app/" 
-      }
-    },
-    {
-      title: "Blog de Café",
-      year: "2023",
-      tags: ["HTML", "CSS", "Grid", "Flexbox"],
-      description: "Blog ficticio creado para practicar diseño responsivo con CSS Grid y Flexbox. El proyecto incluye una estructura multi-página que me permitió fortalecer mis habilidades técnicas de maquetación y diseño web adaptable.",
-      links: { 
-        repo: "https://github.com/LuisChicaizaDev/blog-cafe", 
-        demo: "https://v1-demo-blog-cafe.netlify.app/" 
-      }
-    },
-    /* {
-      title: "Museo al Aire Libre",
-      year: "2023",
-      tags: ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery"],
-      description: "Primer proyecto grupal durante mi formación, enfocado en la creación de un sitio sobre esculturas urbanas en Oviedo. Participé en todo el proceso, desde la toma de fotografías hasta la implementación con HTML, CSS, Bootstrap y jQuery, aplicando Scrum como metodología ágil.",
-      links: { 
-        repo: "", 
-        demo: "http://oviedomuseoairelibre.com/" 
-      }
-    } */
-  ]
 };
