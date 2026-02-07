@@ -102,7 +102,7 @@ export const SkillsSection = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
         {/* FORMACIÓN */}
-        <div className="md:col-span-1 md:row-span-2 group relative p-8 bg-slate-900 border border-slate-800 rounded-3xl hover:border-indigo-500/30 transition-all duration-500 flex flex-col">
+        <div className="md:col-span-1 md:row-span-2 group relative p-8 bg-slate-900/60 border border-slate-800 rounded-3xl hover:border-indigo-500/30 transition-all duration-500 flex flex-col">
           <div className="absolute inset-0 bg-linear-to-b from-indigo-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl" />
 
           <div className="flex items-center gap-3 mb-8 relative z-10">
@@ -113,7 +113,7 @@ export const SkillsSection = () => (
           {/* Timeline*/}
           <div className="space-y-8 relative z-10">
             {/* Línea vertical*/}
-            <div className="absolute left-[19px] top-10 bottom-4 w-0.5 bg-slate-800 group-hover:bg-indigo-900/50 transition-colors"></div>
+            <div className="absolute left-4.75 top-10 bottom-4 w-0.5 bg-slate-800 group-hover:bg-indigo-900/50 transition-colors"></div>
 
             {/* UOC */}
             <div className="relative pl-12">
@@ -139,7 +139,7 @@ export const SkillsSection = () => (
         </div>
 
         {/* STACK PRINCIPAL */}
-        <div className="md:col-span-1 md:row-span-2 lg:row-span-1 lg:col-span-2 relative p-8 bg-linear-to-br from-slate-900 to-slate-900/50 border border-slate-800 rounded-3xl group overflow-hidden">
+        <div className="md:col-span-1 md:row-span-2 lg:row-span-1 lg:col-span-2 relative p-8 bg-linear-to-br bg-slate-900/60 border hover:border-indigo-500/30 border-slate-800 rounded-3xl group overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 group-hover:bg-indigo-500/20 transition-all duration-500"></div>
 
           <div className="relative z-10">
@@ -167,7 +167,7 @@ export const SkillsSection = () => (
         </div>
 
         {/* Base técnica */}
-        <div className="md:col-span-1 group relative p-8 bg-slate-900 border border-slate-800 rounded-3xl hover:border-slate-700 transition-colors">
+        <div className="md:col-span-1 group relative p-8 bg-slate-900/60 border border-slate-800 rounded-3xl hover:border-indigo-500/30 transition-colors">
           <div className="absolute inset-0 bg-linear-to-b from-indigo-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl" />
           
           <div className="flex items-center gap-3 mb-6 relative z-10">
@@ -184,7 +184,7 @@ export const SkillsSection = () => (
         </div>
 
         {/*  HERRAMIENTAS */}
-        <div className="md:col-span-1 group relative p-8 bg-slate-900 border border-slate-800 rounded-3xl hover:border-slate-700 transition-colors">
+        <div className="md:col-span-1 group relative p-8 bg-slate-900/60 border border-slate-800 rounded-3xl hover:border-indigo-500/30 transition-colors">
           <div className="absolute inset-0 bg-linear-to-b from-indigo-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl" />
           
           <div className="flex items-center gap-3 mb-6 relative z-10">
