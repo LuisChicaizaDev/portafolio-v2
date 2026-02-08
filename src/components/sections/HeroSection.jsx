@@ -34,7 +34,7 @@ export const HeroSection = () => {
 
               {/* Título Principal */}
               <h1 className="text-5xl md:text-7xl font-extrabold md:text-center lg:text-start text-white mb-6 tracking-tight">
-                Desarrollador <span className="text-transparent bg-clip-text bg-linear-to-r from-indigo-400 to-purple-400">Frontend</span>
+                Desarrollador <span className="text-transparent bg-clip-text bg-linear-to-r from-indigo-400 to-purple-400">Web</span>
               </h1>
 
               <p className="text-lg text-slate-400 mb-10 leading-relaxed max-w-2xl">
@@ -94,13 +94,12 @@ export const HeroSection = () => {
                           <div className="h-2 w-20 bg-slate-700 rounded-full"></div>
                           <div className="h-2 w-14 bg-indigo-500/50 rounded-full"></div>
                       </div>
-                      <span className="absolute -bottom-6 left-2 text-[10px] text-slate-400">Component.jsx</span>
+                      <span className="absolute -bottom-6 left-2 text-xs text-slate-400">Component.jsx</span>
                   </div>
 
                   {/*  Etiqueta de Nombre */}
                   <div className="absolute bottom-4 right-4 z-20 text-right">
-                      <span className="block text-xs text-indigo-400 mb-1">Luis Chicaiza</span>
-                      <span className="block text-2xl font-bold text-white tracking-tight">Frontend</span>
+                      <span className="block text-base font-semibold text-indigo-400 tracking-tight">Luis Chicaiza</span>
                   </div>
 
               </div>
