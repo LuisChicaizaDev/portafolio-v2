@@ -36,21 +36,21 @@ export const EXPERIENCE_DATA = {
         school: "UOC (Universitat Oberta de Catalunya)",
         current: true,
         dates: "Feb 2026",
-        description: "Formación superior en fundamentos de ingeniería de software, algoritmos y arquitectura de computadores."
+        description: "Formación universitaria para complementar la práctica profesional con una base teórica sólida en ingeniería y arquitectura."
         },
         {
         id: 2,
         degree: "Técnico Superior en Desarrollo de Aplicaciones Web (DAW)",
         school: "ILERNA FP",
         dates: "Feb 2023 - Feb 2025",
-        description: "Ciclo Superior enfocado en desarrollo fullstack, despliegue de aplicaciones y bases de datos."
+        description: "Ciclo Formativo de Grado Superior. Especialización en arquitecturas Full Stack, diseño de bases de datos y despliegue de aplicaciones."
         },
         {
         id: 3,
         degree: "Certificado de Profesionalidad Nivel 3 (Desarrollo de Aplicaciones con Tecnologías Web)",
         school: "SEPE - Formación",
         dates: "Oct 2021 - Mar 2023",
-        description: "Especialización intensiva en tecnologías web frontend y backend."
+        description: "Certificación oficial que cubre todo el proceso: desde la creación de interfaces accesibles hasta la gestión de bases de datos."
         }
     ]
 };
