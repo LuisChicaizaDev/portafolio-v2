@@ -39,8 +39,8 @@ export const ExperienceSection = () => {
                 <div key={job.company} className="group relative pl-8 md:pl-12">
 
                   {/* Punto en la línea de tiempo */}
-                  <div className={`absolute -left-1.75 top-2 size-3.5 rounded-full group-hover:shadow-[0_0_18px_rgba(99,102,241,0.9)] transition-all 
-                    ${job.current ? 'bg-slate-950 border-2 border-indigo-500 z-10 shadow-[0_0_10px_rgba(99,102,241,0.5)]' : 'bg-slate-700'}`}></div>
+                  <div className={`absolute top-2 rounded-full group-hover:shadow-[0_0_18px_rgba(99,102,241,0.9)] transition-all 
+                    ${job.current ? '-left-1.75 size-3.5 bg-slate-950 border-2 border-indigo-500 z-10 shadow-[0_0_10px_rgba(99,102,241,0.5)]' : '-left-1.25 size-2.5 bg-slate-700'}`}></div>
 
                   {/* Tarjeta de Experiencia */}
                   <div className="relative">
