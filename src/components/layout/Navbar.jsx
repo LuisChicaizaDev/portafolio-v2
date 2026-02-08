@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, FileText, Code2 } from 'lucide-react';
+import { Menu, X, FileText } from 'lucide-react';
 import { Button } from '../ui/Button';
 import { SocialLinks } from '../ui/SocialLinks';
 
@@ -57,11 +57,11 @@ export const Navbar = () => {
         <div className={`${containerClasses} transition-all duration-300 mx-auto`}>
           <div className="flex justify-between items-center">
             
-            <a href="#inicio" className="group flex items-center gap-2 text-xl font-bold tracking-tight text-slate-100">
-              <div className="bg-indigo-500/10 p-2 rounded-lg border border-indigo-500/20 group-hover:border-indigo-500/50 transition-colors">
-              <Code2 className="w-5 h-5 text-indigo-400 group-hover:rotate-12 transition-transform" />
+            <a href="#inicio" className="group flex items-center gap-2 text-slate-100">
+              <div className="bg-indigo-500/10 rounded-xl border border-indigo-500/20 group-hover:border-indigo-500/50 transition-colors">
+                <img src="/logo-luis.svg" className="size-10" alt="Logo Luis Chicaiza" />
               </div>
-              <span>
+              <span className="text-xl font-bold tracking-tight">
                 Luis<span className="text-indigo-500">Dev</span>
               </span>
             </a>
@@ -82,7 +82,7 @@ export const Navbar = () => {
               </ul>
 
               {/* Separador */}
-              <div className="h-6 w-[2px] bg-slate-700"></div>
+              <div className="h-6 w-0.5 bg-slate-700"></div>
 
               {/* Iconos Sociales y CV */}
               <div className="flex items-center gap-4">
