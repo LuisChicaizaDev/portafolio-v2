@@ -65,7 +65,7 @@ export const PROJECTS_DATA = {
       links: {
         demo: "https://aerakoreanbeauty.com/",
         repo: "", // No disponible
-        design: "",
+        design: "https://www.figma.com/design/84O4uO0UtmZ2DAZ1h36cXN/AERA?node-id=0-1&t=topGIvKZISVBDgKF-1",
       },
       image: "/assets/img/proyecto-aera.webp"
     },
@@ -84,7 +84,7 @@ export const PROJECTS_DATA = {
       links: {
         demo: "https://aerakoreanbeauty.com/linkbio/",
         repo: "",
-        design: "",
+        design: "https://www.figma.com/design/84O4uO0UtmZ2DAZ1h36cXN/AERA?node-id=0-1&t=topGIvKZISVBDgKF-1",
       },
       image: "/assets/img/proyecto-aera-links.webp"
     },
