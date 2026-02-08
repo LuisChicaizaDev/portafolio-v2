@@ -5,6 +5,7 @@ export const EXPERIENCE_DATA = {
         role: "Desarrollador Web",
         company: "Join Marketing LTD",
         dates: "Mayo 2023 - Actualidad",
+        current: true,
         description: "Mi rol se centra en el desarrollo y mantenimiento de sitios web y Landing Pages orientadas a conversión. Trabajo inyectando código personalizado en entornos WordPress para superar las limitaciones estándar y garantizar la captación de leads.",
         tags: ["Bootstrap", "JavaScript", "PHP", "WordPress"],
         achievements: [
