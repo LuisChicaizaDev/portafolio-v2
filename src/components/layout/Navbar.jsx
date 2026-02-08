@@ -59,7 +59,7 @@ export const Navbar = () => {
             
             <a href="#inicio" className="group flex items-center gap-2 text-slate-100">
               <div className="bg-indigo-500/10 rounded-xl border border-indigo-500/20 group-hover:border-indigo-500/50 transition-colors">
-                <img src="/logo-luis.svg" className="size-10" alt="Logo Luis Chicaiza" />
+                <img src="/assets/logo-luis.svg" className="size-10" alt="Logo Luis Chicaiza" />
               </div>
               <span className="text-xl font-bold tracking-tight">
                 Luis<span className="text-indigo-500">Dev</span>
