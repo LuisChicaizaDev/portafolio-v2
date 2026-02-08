@@ -55,6 +55,8 @@ export const ProjectsSection = () => {
                     src={project.image}
                     alt={project.title}
                     loading="lazy"
+                    width="1600"
+                    height="1000"
                     className="w-full h-full object-contain rounded-2xl border border-slate-400 transform group-hover:scale-105 transition-transform duration-700 ease-out"
                   />
                 </div>
@@ -164,7 +166,7 @@ export const ProjectsSection = () => {
               key={project.title}
               className="group bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-slate-600 transition-all duration-300 flex flex-col h-full"
             >
-              <div className="relative h-auto overflow-hidden bg-slate-800">
+              <div className="relative h-auto overflow-hidden bg-slate-800 aspect-16/10">
                 <div className="absolute inset-0 bg-slate-950/20 group-hover:bg-slate-950/0 transition-colors z-10" />
                 <img
                   src={project.image}
