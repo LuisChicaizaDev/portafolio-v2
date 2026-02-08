@@ -31,7 +31,7 @@ export const ContactSection = () => {
               <h2 className="text-4xl md:text-5xl font-bold text-white">
                 ¿Quieres <br />
                 <span className="text-transparent bg-clip-text bg-linear-to-r from-indigo-400 to-purple-400">
-                  contactarme?
+                  Contactarme?
                 </span>
               </h2>
             </div>
@@ -111,7 +111,7 @@ export const ContactSection = () => {
 
         {/* --- VS CODE MOCKUP  --- */}
         <div className="relative group perspective-1000">
-          <div className="absolute -inset-1 bg-linear-to-tr from-indigo-800/50 via-purple-600/50 to-cyan-800/50 rounded-2xl blur-sm opacity-20 group-hover:opacity-40 transition-opacity duration-500"></div>
+          <div className="absolute -inset-1 bg-linear-to-tr from-indigo-800/50 via-purple-600/50 to-cyan-800/50 rounded-2xl blur-sm opacity-20 group-hover:opacity-50 transition-opacity duration-500"></div>
 
           <div className="relative bg-slate-900 border font-mono border-slate-800 rounded-xl overflow-hidden shadow-2xl duration-500">
 
@@ -141,7 +141,7 @@ export const ContactSection = () => {
               <div className="flex">
                 {/* Números de línea */}
                 <div className="flex flex-col text-slate-600 pr-4 select-none text-right">
-                  <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span className="md:hidden">18</span><span className="md:hidden">19</span><span className="md:hidden">20</span><span className="md:hidden">21</span><span className="md:hidden">22</span><span className="md:hidden">23</span>
+                  <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span className="md:hidden">18</span><span className="md:hidden">19</span><span className="md:hidden">20</span><span className="md:hidden">21</span><span className="md:hidden">22</span><span className="md:hidden">23</span><span className="md:hidden">24</span><span className="md:hidden">25</span>
                 </div>
                 {/* Código React */}
                 <div className="text-slate-300">
@@ -181,13 +181,13 @@ export const ContactSection = () => {
                     <span className="text-orange-300">status</span>=<span className="text-emerald-300">"Open to work"</span>
                   </div>
                   <div className="pl-16">
-                    <span className="text-orange-300">stack</span>=<span className="text-blue-400">{'{['}</span><span className="text-emerald-300">'React'</span>,<span className="text-emerald-300">'Tailwind CSS'</span><span className="text-blue-400">{']}'}</span>
+                    <span className="text-orange-300">stack</span>=<span className="text-blue-400">{'{['}</span><span className="text-emerald-300">'JavaScript'</span>, <span className="text-emerald-300">'React'</span>, <span className="text-emerald-300">'Tailwind CSS'</span><span className="text-blue-400">{']}'}</span>
                   </div>
                   <div className="pl-16">
-                    <span className="text-orange-300">location</span>=<span className="text-emerald-300">"Asturias, España"</span>
+                    <span className="text-orange-300">location</span>=<span className="text-emerald-300">"Oviedo, Asturias"</span>
                   </div>
                   <div className="pl-16">
-                    <span className="text-orange-300">mode</span>=<span className="text-blue-400">{'{['}</span><span className="text-emerald-300">'Híbrido'</span>,<span className="text-emerald-300">'Remoto'</span><span className="text-blue-400">{']}'}</span>
+                    <span className="text-orange-300">mode</span>=<span className="text-blue-400">{'{['}</span><span className="text-emerald-300">'Presencial'</span>, <span className="text-emerald-300">'Híbrido'</span>, <span className="text-emerald-300">'Remoto'</span><span className="text-blue-400">{']}'}</span>
                   </div>
                   <div className="pl-12">
                     <span className="text-slate-500">/&gt;</span>
