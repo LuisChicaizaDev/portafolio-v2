@@ -43,7 +43,7 @@ export const ContactSection = () => {
           <div className="flex flex-col gap-4">
 
             {/* BOTÓN EMAIL  */}
-            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-4 md:p-6 inline-flex justify-between grow md:items-center gap-4 md:gap-6 hover:border-indigo-500/50 transition-colors">
+            <div className="bg-slate-900/60 border border-slate-800 rounded-2xl p-4 md:p-6 inline-flex justify-between grow md:items-center gap-4 md:gap-6 hover:border-indigo-500/50 transition-colors">
 
               <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6">
                 <div className="p-3 bg-indigo-500/10 rounded-full text-indigo-400">
@@ -74,7 +74,7 @@ export const ContactSection = () => {
             </div>
 
             {/* BOTÓN LINKEDIN */}
-            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-4 md:p-6 inline-flex justify-between grow md:items-center gap-4 md:gap-6 hover:border-indigo-500/50 transition-colors">
+            <div className="bg-slate-900/60 border border-slate-800 rounded-2xl p-4 md:p-6 inline-flex justify-between grow md:items-center gap-4 md:gap-6 hover:border-indigo-500/50 transition-colors">
 
               <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6">
                 <div className="p-3 bg-indigo-500/10 rounded-full text-indigo-400">
@@ -113,7 +113,7 @@ export const ContactSection = () => {
         <div className="relative group perspective-1000">
           <div className="absolute -inset-1 bg-linear-to-tr from-indigo-800/50 via-purple-600/50 to-cyan-800/50 rounded-2xl blur-sm opacity-20 group-hover:opacity-50 transition-opacity duration-500"></div>
 
-          <div className="relative bg-slate-900 border font-mono border-slate-800 rounded-xl overflow-hidden shadow-2xl duration-500">
+          <div className="relative bg-slate-900/90 border font-mono border-slate-800 rounded-xl overflow-hidden shadow-2xl duration-500">
 
             {/* Barra superior (Tabs) */}
             <div className="flex items-center bg-slate-950/50 px-4 py-2 pb-0">
