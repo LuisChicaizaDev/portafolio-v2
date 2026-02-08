@@ -5,24 +5,23 @@ export const EXPERIENCE_DATA = {
         role: "Desarrollador Web",
         company: "Join Marketing LTD",
         dates: "Mayo 2023 - Actualidad",
-        description: "Responsable del desarrollo técnico en agencia de marketing. Lidero la creación de landing pages de alta conversión y la personalización avanzada de CMS.",
-        tags: ["PHP", "JavaScript", "WordPress", "Optimización Web"],
+        description: "Mi rol se centra en el desarrollo y mantenimiento de sitios web y Landing Pages orientadas a conversión. Trabajo inyectando código personalizado en entornos WordPress para superar las limitaciones estándar y garantizar la captación de leads.",
+        tags: ["Bootstrap", "JavaScript", "PHP", "WordPress"],
         achievements: [
-            "Desarrollo de soluciones a medida con HTML, CSS, Bootstrap y JS orientadas a objetivos de negocio.",
-            "Implementación de lógica de backend (PHP) para formularios dinámicos en campañas activas.",
-            "Optimización de Core Web Vitals y tiempos de carga para mejorar UX y SEO.",
-            "Personalización estructural de plantillas WordPress (Child Themes) más allá del editor visual."
+            "Desarrollo de funcionalidades a medida con HTML, CSS, Bootstrap, JS y PHP, alineadas con los objetivos del negocio.",
+            "Implementación de snippets en PHP para procesar formularios dinámicos y gestionar datos en campañas activas",
+            "Personalización estructural de plantillas WordPress (Child Themes) editando directamente archivos PHP y CSS para funcionalidades que el constructor no permite."
         ]
         },
         {
         role: "Desarrollador Web",
         company: "C.F.O Ayuntamiento de Oviedo",
         dates: "Abril 2022 - Marzo 2023",
-        description: "Desarrollo frontend para iniciativas municipales de turismo. Proyecto centrado en la accesibilidad y la consistencia visual.",
+        description: "Desarrollo completo de un sitio web informativo para el turismo de la ciudad de Oviedo. Un proyecto realizado como parte de un programa de formación y empleo con prácticas reales, enfocado en la usabilidad y los estándares web.",
         tags: ["HTML5", "CSS3", "Bootstrap", "jQuery"],
         achievements: [
-            "Maquetación responsive garantizando visualización perfecta en móviles y tablets.",
-            "Estructuración semántica del contenido para cumplir estándares de accesibilidad.",
+            "Maquetación y diseño Responsive de múltiples interfaces utilizando HTML, CSS3, JavaScript, Bootstrap y jQuery.",
+            "Responsable de la correcta visualización y consistencia del sitio en todos los dispositivos (móvil, tablet y escritorio)",
             "Colaboración en el diseño visual y experiencia de usuario del portal turístico."
         ]
         }

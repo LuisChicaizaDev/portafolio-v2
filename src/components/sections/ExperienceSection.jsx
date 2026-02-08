@@ -19,7 +19,7 @@ export const ExperienceSection = () => {
             </h2>
           </div>
           <p className="text-slate-400 max-w-3xl text-lg">
-            Mi recorrido técnico combinando el trabajo en entornos reales con la formación académica continua en ingeniería.
+            Mi experiencia laboral, combinada con una ruta de aprendizaje académico y técnico constante para fortalecer la base de mis conocmientos. 
           </p>
         </div>
 
@@ -28,8 +28,8 @@ export const ExperienceSection = () => {
           {/* EXPERIENCIA LABORAL */}
           <div className="lg:col-span-7 space-y-12">
             <h3 className="text-xl font-bold text-white flex items-center gap-3 mb-8">
-              <span className="w-8 h-8 rounded-lg bg-indigo-500/20 flex items-center justify-center text-indigo-400">
-                <Briefcase className="w-5 h-5" />
+              <span className="size-9 rounded-lg bg-indigo-500/20 flex items-center justify-center text-indigo-400">
+                <Briefcase className="size-6" />
               </span>
               Experiencia Laboral
             </h3>
@@ -39,7 +39,7 @@ export const ExperienceSection = () => {
                 <div key={job.company} className="group relative pl-8 md:pl-12">
 
                   {/* Punto en la línea de tiempo */}
-                  <div className="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-indigo-500 shadow-[0_0_4px_rgba(99,102,241,0.2)] group-hover:shadow-[0_0_18px_rgba(99,102,241,0.9)] transition-all"></div>
+                  <div className="absolute -left-1.25 top-2 w-2.5 h-2.5 rounded-full bg-indigo-500 shadow-[0_0_4px_rgba(99,102,241,0.2)] group-hover:shadow-[0_0_18px_rgba(99,102,241,0.9)] transition-all"></div>
 
                   {/* Tarjeta de Experiencia */}
                   <div className="relative">
@@ -86,8 +86,8 @@ export const ExperienceSection = () => {
           {/* FORMACIÓN */}
           <div className="lg:col-span-5 space-y-8">
             <h3 className="text-xl font-bold text-white flex items-center gap-3 mb-8">
-              <span className="w-8 h-8 rounded-lg bg-emerald-500/20 flex items-center justify-center text-emerald-400">
-                <GraduationCap className="w-5 h-5" />
+              <span className="size-9 rounded-lg bg-emerald-500/20 flex items-center justify-center text-emerald-400">
+                <GraduationCap className="size-6" />
               </span>
               Formación Académica
             </h3>
