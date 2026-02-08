@@ -91,7 +91,7 @@ export const PROJECTS_DATA = {
     {
       title: "Portafolio v1",
       year: "2024 | Actualizado 2025",
-      description: "Mi primer ortafolio web personal diseñado desde Figma y desarrollado con HTML, Sass, JavaScript y Bootstrap. Implementa la carga dinámica de proyectos mediante fetch y el consumo de datos desde JSON. Refleja estilo, enfoque técnico y evolución como desarrollador.",
+      description: "Mi primer portafolio web personal, desarrollado con HTML, Sass, JavaScript y Bootstrap. Implementé la carga dinámica de proyectos mediante Fetch y el consumo de datos desde JSON, reflejando mis bases técnicas y evolución",
       tags: ["HTML & Sass", "Bootstrap", "JavaScript", "Figma"],
       links: {
         demo: "https://luischicaizadev.github.io/", 
