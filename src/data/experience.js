@@ -10,7 +10,7 @@ export const EXPERIENCE_DATA = {
         tags: ["Bootstrap", "JavaScript", "PHP", "WordPress"],
         achievements: [
             "Desarrollo de funcionalidades a medida con HTML, CSS, Bootstrap, JS y PHP, alineadas con los objetivos del negocio.",
-            "Implementación de snippets en PHP para procesar formularios dinámicos y gestionar datos en campañas activas",
+            "Implementación de scripts en PHP para procesar formularios dinámicos y gestionar datos en campañas activas",
             "Personalización estructural de plantillas WordPress (Child Themes) editando directamente archivos PHP y CSS para funcionalidades que el constructor no permite."
         ]
         },
