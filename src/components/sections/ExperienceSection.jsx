@@ -44,7 +44,7 @@ export const ExperienceSection = () => {
 
                   {/* Tarjeta de Experiencia */}
                   <div className="relative">
-                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-2">
+                    <div className="flex flex-col sm:flex-row items-start md:items-center sm:justify-between gap-2 mb-2">
                       <h4 className="text-xl font-bold text-slate-100 group-hover:text-indigo-400 transition-colors">
                         {job.role}
                       </h4>
