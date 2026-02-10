@@ -22,7 +22,7 @@ export const EXPERIENCE_DATA = {
         tags: ["HTML5", "CSS3", "Bootstrap", "jQuery"],
         achievements: [
             "Maquetación y diseño Responsive de múltiples interfaces utilizando HTML, CSS3, JavaScript, Bootstrap y jQuery.",
-            "Responsable de la correcta visualización y consistencia del sitio en todos los dispositivos (móvil, tablet y escritorio)",
+            "Responsable de la correcta visualización y consistencia del sitio en todos los dispositivos (móvil, tablet y ordenador).",
             "Colaboración en el diseño visual y experiencia de usuario del portal turístico."
         ]
         }
