@@ -55,8 +55,8 @@ export const ProjectsSection = () => {
                     src={project.image}
                     alt={project.title}
                     loading="lazy"
-                    width="1600"
-                    height="1000"
+                    width="556"
+                    height="348"
                     className="w-full h-full object-contain rounded-2xl border border-slate-400 transform group-hover:scale-105 transition-transform duration-700 ease-out"
                   />
                 </div>
@@ -171,6 +171,8 @@ export const ProjectsSection = () => {
                 <img
                   src={project.image}
                   alt={project.title}
+                  width="403"
+                  height="252"
                   loading="lazy"
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
                 />

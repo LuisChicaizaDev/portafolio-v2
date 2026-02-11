@@ -15,7 +15,7 @@ export const PROJECTS_DATA = {
         demo: "https://futbol-app-mu.vercel.app/",
         repo: "https://github.com/LuisChicaizaDev/futbol-app",
       },
-      image: "/assets/img/proyecto-futbol-app.webp"
+      image: "/assets/img/proyecto-futbol-app-800.webp"
     },
     {
       title: "MR. BARBER",
@@ -26,7 +26,7 @@ export const PROJECTS_DATA = {
         demo: "https://mrbarber.free.nf",
         repo: "https://github.com/LuisChicaizaDev/mrbarber-mvc-php",
       },
-      image: "/assets/img/proyecto-mr-barber.webp"
+      image: "/assets/img/proyecto-mr-barber-800.webp"
     },
     {
       title: "Desafíos Frontend Mentor",
@@ -37,7 +37,7 @@ export const PROJECTS_DATA = {
         demo: "https://frontend-mentor-luis.vercel.app/",
         repo: "https://github.com/LuisChicaizaDev/challenges-frontend-mentor",
       },
-      image: "/assets/img/proyecto-frontend-mentor.webp"
+      image: "/assets/img/proyecto-frontend-mentor-800.webp"
     },
     {
       title: "Boxeo Project",
@@ -48,7 +48,7 @@ export const PROJECTS_DATA = {
         demo: "https://boxeoproject.free.nf/",
         repo: "https://github.com/LuisChicaizaDev/proyecto-daw",
       },
-      image: "/assets/img/proyecto-boxeo-project.webp"
+      image: "/assets/img/proyecto-boxeo-project-800.webp"
     },
     {
       title: "Aera Korean Beauty",
@@ -67,7 +67,7 @@ export const PROJECTS_DATA = {
         repo: "", // No disponible
         design: "https://www.figma.com/design/84O4uO0UtmZ2DAZ1h36cXN/AERA?node-id=0-1&t=topGIvKZISVBDgKF-1",
       },
-      image: "/assets/img/proyecto-aera.webp"
+      image: "/assets/img/proyecto-aera-800.webp"
     },
     {
       title: "Aera – Página de Enlaces",
@@ -86,7 +86,7 @@ export const PROJECTS_DATA = {
         repo: "",
         design: "https://www.figma.com/design/84O4uO0UtmZ2DAZ1h36cXN/AERA?node-id=0-1&t=topGIvKZISVBDgKF-1",
       },
-      image: "/assets/img/proyecto-aera-links.webp"
+      image: "/assets/img/proyecto-aera-linkbio-800.webp"
     },
     {
       title: "Portafolio v1",
@@ -97,7 +97,7 @@ export const PROJECTS_DATA = {
         demo: "https://luischicaizadev.github.io/", 
         repo: "https://github.com/LuisChicaizaDev/portafolio",
       },
-      image: "/assets/img/proyecto-portafolio.webp"
+      image: "/assets/img/proyecto-portafolio-800.webp"
     }
   ],
 };
