@@ -42,7 +42,7 @@ export const PROJECTS_DATA = {
     {
       title: "Boxeo Project",
       year: "2025",
-      description: "Plataforma web para gestionar eventos de boxeo, con registro de usuarios, administración de veladas y control de boxeadores. Desarrollado como proyecto final de curso, implementa autenticación, validaciones fullstack y operaciones CRUD con PHP y MySQL.",
+      description: "Plataforma web para gestionar eventos de boxeo, con registro de usuarios, administración de veladas y control de boxeadores. Desarrollado como Trabajo Final de Grado, implementa autenticación, validaciones fullstack y operaciones CRUD con PHP y MySQL.",
       tags: ["HTML & Sass", "JavaScript", "PHP", "MySQL"],
       links: {
         demo: "https://boxeoproject.free.nf/",
@@ -90,7 +90,7 @@ export const PROJECTS_DATA = {
     },
     {
       title: "Portafolio v1",
-      year: "2024 | Actualizado 2025",
+      year: "2024 - 2025",
       description: "Mi primer portafolio web personal, desarrollado con HTML, Sass, JavaScript y Bootstrap. Implementé la carga dinámica de proyectos mediante Fetch y el consumo de datos desde JSON, reflejando mis bases técnicas y evolución",
       tags: ["HTML & Sass", "Bootstrap", "JavaScript", "Figma"],
       links: {
