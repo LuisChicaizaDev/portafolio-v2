@@ -107,7 +107,7 @@ export const ExperienceSection = () => {
                     )}
                   </div>
                   <p className="text-indigo-400 text-xs font-medium mb-1">{edu.school}</p>
-                  <p className="text-slate-500 text-xs mb-3">{edu.dates}</p>
+                  <p className="text-slate-400 text-xs mb-3">{edu.dates}</p>
                   <p className="text-slate-400 text-xs leading-relaxed">{edu.description}</p>
                 </div>
               ))}
