@@ -1,11 +1,8 @@
-import { useState } from 'react';
 import { ChevronRight, MailCheck, GraduationCap, Atom } from 'lucide-react';
 import { Button } from '../ui/Button';
 import { Badge } from '../ui/Badge';
 
 export const HeroSection = () => {
-  // Estado para controlar la carga de la imagen
-  const [isHeroImageLoaded, setIsHeroImageLoaded] = useState(false);
   
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
@@ -67,17 +64,24 @@ export const HeroSection = () => {
 
               {/* Foto  */}
               <div className="absolute inset-0 rounded-4xl overflow-hidden border-2 border-slate-800 bg-slate-900 shadow-2xl z-10 group-hover:scale-[1.02] transition-all duration-500">
-                  {/* Skeleton */}
-                  <div className="absolute inset-0 bg-slate-800 animate-pulse" style={{ display: isHeroImageLoaded ? 'none' : 'block' }}></div>
 
-                  <img 
-                    src="/assets/foto-perfil-luis.webp" 
-                    alt="Foto de perfil Luis Chicaiza Desarrollador Web" 
-                    loading="eager" // Carga inmediata
-                    fetchPriority="high" // Alta prioridad
-                    className={`w-full h-full object-cover transition-all duration-800 ${isHeroImageLoaded ? 'opacity-100 blur-0' : 'opacity-0 blur-sm'}`} 
-                    onLoad={() => setIsHeroImageLoaded(true)} // Avisa cuando termina
-                  />
+                  <picture>
+                    {/* Si el ancho de pantalla es menor a 600px, intenta usar la de 600 */}
+                    <source 
+                      media="(max-width: 600px)" 
+                      srcSet="/assets/foto-perfil-luis-600.webp" 
+                    />
+                    {/* Para escritorio usa la de 1200 */}
+                    <img 
+                      src="/assets/foto-perfil-luis-1200.webp"
+                      alt="Foto de perfil Luis Chicaiza Desarrollador Web" 
+                      width="290"
+                      height="316"
+                      loading="eager" // Carga inmediata
+                      fetchPriority="high" // Alta prioridad
+                      className="w-full h-full object-cover" 
+                    />
+                  </picture>
                   
                   <div className="absolute inset-0 bg-linear-to-t from-slate-950 via-transparent to-transparent"></div>
               </div>
