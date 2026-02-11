@@ -181,7 +181,7 @@ export const ProjectsSection = () => {
                   <h3 className="text-xl font-bold text-slate-100 group-hover:text-indigo-400 transition-colors">
                     {project.title}
                   </h3>
-                  <span className="text-xs font-mono text-slate-500 pt-1">
+                  <span className="text-xs font-mono text-slate-400 pt-1">
                     {project.year}
                   </span>
                 </div>
