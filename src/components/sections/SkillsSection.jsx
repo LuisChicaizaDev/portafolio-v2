@@ -121,7 +121,7 @@ export const SkillsSection = () => (
               <div className="flex flex-col">
                 <span className="text-xs text-indigo-400 mb-1">Feb 2026 - Actualidad</span>
                 <h4 className="font-bold text-white text-lg leading-tight mb-1">Grado Ingeniería Informática</h4>
-                <span className="text-slate-400 text-sm">UOC</span>
+                <span className="text-slate-400 text-sm">UOC (Universitat Oberta de Catalunya)</span>
                 <span className="mt-2 text-[12px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2 py-0.5 rounded w-fit">En curso</span>
               </div>
             </div>
