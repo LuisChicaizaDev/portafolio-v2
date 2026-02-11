@@ -90,8 +90,15 @@ export const Navbar = () => {
                 <SocialLinks />
                 
                 {/* BOTÓN DE DESCARGA CV*/}
-                <Button variant="primary" className="py-1.5! px-4! text-xs! gap-2" icon={FileText}>
-                  CV
+                <Button 
+                  variant="primary" 
+                  className="py-1.5! px-4! text-xs! gap-2" 
+                  href="/CV-Luis-Chicaiza.pdf"
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  icon={FileText}
+                >
+                  Ver CV
                 </Button>
               </div>
             </div>
@@ -127,8 +134,15 @@ export const Navbar = () => {
           {/* Iconos Sociales y CV */}
           <div className="flex flex-col items-center justify-center gap-6">
 
-            <Button variant="primary" className="gap-2" icon={FileText}>
-              Descargar CV
+            <Button 
+              variant="primary" 
+              className="gap-2"
+              href="/CV-Luis-Chicaiza.pdf"
+              target="_blank" 
+              rel="noopener noreferrer" 
+              icon={FileText}
+            >
+              Ver Currículum
             </Button>
 
             {/* Iconos Sociales*/}
