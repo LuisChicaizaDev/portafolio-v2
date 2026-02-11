@@ -107,6 +107,7 @@ export const Navbar = () => {
             <button 
               className="lg:hidden p-2 text-slate-400 hover:text-white bg-slate-800 rounded-lg cursor-pointer transition-all duration-300"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label="Abrir o cerrar menú de navegación"
             >
               {isMobileMenuOpen ? <X /> : <Menu />}
             </button>
