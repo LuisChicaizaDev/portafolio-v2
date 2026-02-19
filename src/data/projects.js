@@ -7,6 +7,57 @@ export const PROJECTS_DATA = {
  // PROYECTOS DESTACADOS
  projects: [
     {
+      title: "Aera CRM Personalizado",
+      year: "2026 | En Produccion",
+      isFeatured: true,
+      studyType: "CRM a Medida",
+      description: "Desarrollado para la gestión digital de Aera. Nace de la necesidad de digitalizar el seguimiento de clientes, consentimientos firmados y métricas de negocio. Utilizando IA como copiloto técnico para acelerar la adopción de Next.js y TypeScript en un entorno de producción real.",
+      achievements: [
+        "Firmas digitales en canvas",
+        "Sincronización usando la API de Setmore",
+        "Backend serverless con Supabase (Auth + DB)",
+      ],
+      tags: ["React", "Next.js", "TypeScript", "Supabase", "Tailwind CSS", "Recharts", "Shadcn/ui"],
+      links: {
+        demo: "https://crm.aerakoreanbeauty.com/",
+        repo: "",
+        design: "",
+      },
+      gallery: [
+        {
+          src: "/assets/img/aera-crm/aera-crm-1.webp",
+          alt: "Vista general del dashboard de Aera CRM",
+          caption: "Dashboard principal con KPIs operativos"
+        },
+        {
+          src: "/assets/img/aera-crm/aera-crm-2.webp",
+          alt: "Vista de modal de clientes",
+          caption: "Modal para realizar el registro de clientes"
+        },
+        {
+          src: "/assets/img/aera-crm/aera-crm-3.webp",
+          alt: "Vista de modal de seguimiento imágenes",
+          caption: "Modal para subir imágenes del antes y después de un tratamiento y compararlas"
+        },
+        {
+          src: "/assets/img/aera-crm/aera-crm-4.webp",
+          alt: "Vista del modal de consentimiento firmado",
+          caption: "Modal con información importante del consentimiento firmado de un tratamiento"
+        },
+        {
+          src: "/assets/img/aera-crm/aera-crm-5.webp",
+          alt: "Vista de todos los tratamientos",
+          caption: "Vista de todos los tratamientos sincronizados en tiempo real con la API de Setmore"
+        },
+        {
+          src: "/assets/img/aera-crm/aera-crm-6.webp",
+          alt: "Vista de firmar consentimiento",
+          caption: "Vista del documento a firmar para realizar un tratamiento en concreto"
+        },
+      ],
+      image: "/assets/img/proyecto-aera-crm-800.webp"
+    },
+    {
       title: "Fútbol App",
       year: "2025",
       description: "Aplicación para gestionar equipos de fútbol, desarrollada como experimento personal para aprender nuevas tecnologías y construir una app completa en tiempos reducidos usando IA como copiloto. Incluye panel público, panel admin, CRUD, autenticación y base de datos en Supabase.",
