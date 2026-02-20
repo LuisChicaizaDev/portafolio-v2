@@ -11,14 +11,14 @@ export const PROJECTS_DATA = {
       year: "2026",
       isFeatured: true,
       studyType: "CRM a Medida",
-      description: "Desarrollado para la gestión digital de Aera. Nace de la necesidad de digitalizar el seguimiento de clientes, consentimientos firmados y métricas de negocio. Utilicé herramientas de IA como copiloto técnico para acelerar la adopción de Next.js y TypeScript en un entorno de producción real.",
+      description: "Desarrollado para la gestión digital de Aera. Nace de la necesidad de digitalizar el seguimiento de clientes, consentimientos firmados y métricas de negocio. Utilicé herramientas de IA como copiloto técnico para delegar la configuración de TypeScript, lo que me permitió centrarme al 100% en desarrollar la interfaz y aprender el ecosistema de Next.js",
       achievements: [
         "Captura de firma digital para consentimientos",
         "Sincronización en tiempo real con API de Setmore",
         "Backend completo (Auth, BD, Storage) con Supabase",
         "Interfaz moderna con Tailwind CSS y Shadcn/ui.",
       ],
-      tags: ["Next.js", "TypeScript", "React", "Supabase", "Tailwind CSS", "Recharts", "Shadcn/ui"],
+      tags: ["React", "Next.js", "Tailwind CSS", "Supabase", "Recharts", "Shadcn/ui"],
       links: {
         demo: "https://crm.aerakoreanbeauty.com/",
         repo: "",
