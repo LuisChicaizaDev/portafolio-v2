@@ -48,12 +48,12 @@ export const PROJECTS_DATA = {
         {
           src: "/assets/img/aera-crm/aera-crm-5.webp",
           alt: "Listado de tratamientos sincronizados con Setmore",
-          caption: "Catálogo de tratamientos sincronizado bidireccionalmente con la API de Setmore."
+          caption: "Catálogo de tratamientos sincronizado con la API de Setmore."
         },
         {
           src: "/assets/img/aera-crm/aera-crm-6.webp",
           alt: "Interfaz de captura de firma digital para consentimientos",
-          caption: "Firma digital integrada: Captura manuscrita para validación legal de tratamientos."
+          caption: "Firma digital integrada: Captura manuscrita para la firma del consentimiento de tratamientos."
         }
       ],
       image: "/assets/img/proyecto-aera-crm-800.webp"
