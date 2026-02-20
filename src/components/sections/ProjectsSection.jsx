@@ -162,7 +162,9 @@ export const ProjectsSection = () => {
                   <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-indigo-300 transition-colors">
                     {project.title}
                   </h3>
-
+                  <span className="text-xs font-mono text-slate-400 mb-3">
+                    {project.year}
+                  </span>
                   <p className="text-slate-400 text-sm leading-relaxed mb-6">
                     {project.description}
                   </p>

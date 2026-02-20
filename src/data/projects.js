@@ -8,7 +8,7 @@ export const PROJECTS_DATA = {
  projects: [
     {
       title: "Aera - CRM Personalizado",
-      year: "2026 | En Producción",
+      year: "2026",
       isFeatured: true,
       studyType: "CRM a Medida",
       description: "Desarrollado para la gestión digital de Aera. Nace de la necesidad de digitalizar el seguimiento de clientes, consentimientos firmados y métricas de negocio. Utilicé herramientas de IA como copiloto técnico para acelerar la adopción de Next.js y TypeScript en un entorno de producción real.",
