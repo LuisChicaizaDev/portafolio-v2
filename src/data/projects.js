@@ -18,7 +18,7 @@ export const PROJECTS_DATA = {
         "Backend completo (Auth, BD, Storage) con Supabase",
         "Interfaz moderna con Tailwind CSS y Shadcn/ui.",
       ],
-      tags: ["React", "Next.js", "Tailwind CSS", "Supabase", "Recharts", "Shadcn/ui"],
+      tags: ["React", "Next.js", "Tailwind CSS", "Supabase", "Shadcn/ui"],
       links: {
         demo: "https://crm.aerakoreanbeauty.com/",
         repo: "",
