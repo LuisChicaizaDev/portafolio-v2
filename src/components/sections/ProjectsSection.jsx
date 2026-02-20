@@ -93,15 +93,15 @@ export const ProjectsSection = () => {
         {/* =======================================================
             CASOS DE ESTUDIO 
            ======================================================= */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-30">
+        <div className="grid grid-cols-1 gap-8 mb-30">
           {featuredCases.map((project) => (
             <article
               key={project.title}
               className="group relative bg-slate-900/60 border border-slate-800 rounded-3xl overflow-hidden hover:border-indigo-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-500/20"
             >
-              <div className="flex flex-col gap-6 p-6 md:p-8">
+              <div className="flex flex-col lg:flex-row items-center gap-6 p-6 md:p-8">
                 {/* VISTA PREVIA */}
-                <div className="order-2 w-full relative overflow-hidden rounded-2xl">
+                <div className="order-2 w-full h-auto xl:h-90 relative overflow-hidden rounded-2xl">
                   <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-slate-900/0 transition-colors z-10" />
                   <img
                     src={project.image}
@@ -109,7 +109,7 @@ export const ProjectsSection = () => {
                     loading="lazy"
                     width="556"
                     height="348"
-                    className="w-full h-full object-contain rounded-2xl border border-slate-400 transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                    className="w-full h-full object-cover rounded-2xl border border-slate-400 transform group-hover:scale-105 transition-transform duration-700 ease-out"
                   />
                 </div>
 
