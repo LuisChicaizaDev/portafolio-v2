@@ -7,17 +7,18 @@ export const PROJECTS_DATA = {
  // PROYECTOS DESTACADOS
  projects: [
     {
-      title: "Aera CRM Personalizado",
-      year: "2026 | En Produccion",
+      title: "Aera - CRM Personalizado",
+      year: "2026 | En Producción",
       isFeatured: true,
       studyType: "CRM a Medida",
-      description: "Desarrollado para la gestión digital de Aera. Nace de la necesidad de digitalizar el seguimiento de clientes, consentimientos firmados y métricas de negocio. Utilizando IA como copiloto técnico para acelerar la adopción de Next.js y TypeScript en un entorno de producción real.",
+      description: "Desarrollado para la gestión digital de Aera. Nace de la necesidad de digitalizar el seguimiento de clientes, consentimientos firmados y métricas de negocio. Utilicé herramientas de IA como copiloto técnico para acelerar la adopción de Next.js y TypeScript en un entorno de producción real.",
       achievements: [
-        "Firmas digitales en canvas",
-        "Sincronización usando la API de Setmore",
-        "Backend serverless con Supabase (Auth + DB)",
+        "Captura de firma digital para consentimientos",
+        "Sincronización en tiempo real con API de Setmore",
+        "Backend completo (Auth, BD, Storage) con Supabase",
+        "Interfaz moderna con Tailwind CSS y Shadcn/ui.",
       ],
-      tags: ["React", "Next.js", "TypeScript", "Supabase", "Tailwind CSS", "Recharts", "Shadcn/ui"],
+      tags: ["Next.js", "TypeScript", "React", "Supabase", "Tailwind CSS", "Recharts", "Shadcn/ui"],
       links: {
         demo: "https://crm.aerakoreanbeauty.com/",
         repo: "",
@@ -26,34 +27,34 @@ export const PROJECTS_DATA = {
       gallery: [
         {
           src: "/assets/img/aera-crm/aera-crm-1.webp",
-          alt: "Vista general del dashboard de Aera CRM",
-          caption: "Dashboard principal con KPIs operativos"
+          alt: "Dashboard principal de Aera CRM con métricas financieras",
+          caption: "Dashboard analítico en tiempo real con KPIs operativos y financieros."
         },
         {
           src: "/assets/img/aera-crm/aera-crm-2.webp",
-          alt: "Vista de modal de clientes",
-          caption: "Modal para realizar el registro de clientes"
+          alt: "Modal de gestión y registro de clientes",
+          caption: "Gestión centralizada: Interfaz de registro y seguimiento de clientes."
         },
         {
           src: "/assets/img/aera-crm/aera-crm-3.webp",
-          alt: "Vista de modal de seguimiento imágenes",
-          caption: "Modal para subir imágenes del antes y después de un tratamiento y compararlas"
+          alt: "Sistema de comparación de imágenes de tratamientos",
+          caption: "Seguimiento visual: Comparativa interactiva del antes y después de cada tratamiento."
         },
         {
           src: "/assets/img/aera-crm/aera-crm-4.webp",
-          alt: "Vista del modal de consentimiento firmado",
-          caption: "Modal con información importante del consentimiento firmado de un tratamiento"
+          alt: "Modal de información de consentimientos médicos",
+          caption: "Gestión documental: Historial de consentimientos informados por paciente."
         },
         {
           src: "/assets/img/aera-crm/aera-crm-5.webp",
-          alt: "Vista de todos los tratamientos",
-          caption: "Vista de todos los tratamientos sincronizados en tiempo real con la API de Setmore"
+          alt: "Listado de tratamientos sincronizados con Setmore",
+          caption: "Catálogo de tratamientos sincronizado bidireccionalmente con la API de Setmore."
         },
         {
           src: "/assets/img/aera-crm/aera-crm-6.webp",
-          alt: "Vista de firmar consentimiento",
-          caption: "Vista del documento a firmar para realizar un tratamiento en concreto"
-        },
+          alt: "Interfaz de captura de firma digital para consentimientos",
+          caption: "Firma digital integrada: Captura manuscrita para validación legal de tratamientos."
+        }
       ],
       image: "/assets/img/proyecto-aera-crm-800.webp"
     },
