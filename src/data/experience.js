@@ -6,12 +6,12 @@ export const EXPERIENCE_DATA = {
         company: "Join Marketing LTD",
         dates: "Mayo 2023 - Actualidad",
         current: true,
-        description: "Mi rol se centra en el desarrollo y mantenimiento de sitios web y Landing Pages orientadas a conversión. Trabajo inyectando código personalizado en entornos WordPress para superar las limitaciones estándar y garantizar la captación de leads.",
-        tags: ["Bootstrap", "JavaScript", "PHP", "WordPress"],
+        description: "Mi rol se centra en el desarrollo y mantenimiento de sitios web y Landing Pages orientadas a conversión. Implementación de funcionalidades dinámicas en frontend y personalización de entornos WordPress mediante código para adaptarlos a necesidades específicas de negocio.",
+        tags: ["JavaScript", "HTML5", "CSS3", "Bootstrap", "WordPress", "PHP"],
         achievements: [
-            "Desarrollo de funcionalidades a medida con HTML, CSS, Bootstrap, JS y PHP, alineadas con los objetivos del negocio.",
-            "Implementación de scripts en PHP para procesar formularios dinámicos y gestionar datos en campañas activas",
-            "Personalización de plantillas WordPress (Child Themes) editando directamente archivos PHP y CSS para funcionalidades que el constructor no permite."
+            "Desarrollo de funcionalidades dinámicas en frontend con JavaScript.",
+            "Implementación de lógica en PHP para gestión de formularios y datos.",
+            "Personalización de plantillas en WordPress mediante código (PHP, CSS y JavaScript) para funcionalidades que el constructor no permite."
         ]
         },
         {
