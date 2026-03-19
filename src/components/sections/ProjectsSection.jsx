@@ -211,13 +211,13 @@ export const ProjectsSection = () => {
            ======================================================= */}
         <div className="text-center my-16">
           <h3 className="text-2xl font-bold text-white inline-block relative mb-4">
-            Laboratorio & Prácticas
+            Proyectos Adicionales
           </h3>
           <p className="text-slate-400 max-w-3xl mx-auto text-lg">
             Aquí es donde la curiosidad se convierte en código. Un recorrido
             desde mi{" "}
             <span className="font-bold text-indigo-300">
-              Trabajo Final de Grado
+              Trabajo Final de Curso
             </span>{" "}
             hasta mis últimos experimentos, consolidando bases Frontend y
             Backend mientras exploro nuevas tecnologías.

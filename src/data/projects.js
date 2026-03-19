@@ -61,8 +61,8 @@ export const PROJECTS_DATA = {
     {
       title: "Fútbol App",
       year: "2025",
-      description: "Aplicación para gestionar equipos de fútbol, desarrollada como experimento personal para aprender nuevas tecnologías y construir una app completa en tiempos reducidos usando IA como copiloto. Incluye panel público, panel admin, CRUD, autenticación y base de datos en Supabase.",
-      tags: ["React", "Tailwind CSS", "Supabase", "Next.js", "IA-asistida"],
+      description: "Aplicación web desarrollada con React para la gestión de equipos de fútbol. Incluye panel público y de administración, implementación de operaciones CRUD, autenticación de usuarios y gestión de datos con Supabase.",
+      tags: ["React", "Tailwind CSS", "Supabase", "Next.js"],
       links: {
         demo: "https://futbol-app-mu.vercel.app/",
         repo: "https://github.com/LuisChicaizaDev/futbol-app",
@@ -83,7 +83,7 @@ export const PROJECTS_DATA = {
     {
       title: "Desafíos Frontend Mentor",
       year: "2025",
-      description: "Proyecto desarrollado para mostrar una recopilación de desafíos de Frontend Mentor, realizado con React y Tailwind CSS como parte de mi proceso de aprendizaje en un stack moderno. Incluye modo light/dark implementado con useState, useEffect y persistencia en localStorage.",
+      description: "Aplicación desarrollada con React y Tailwind CSS que recopila múltiples interfaces interactivas. Incluye gestión de estado con hooks (useState, useEffect), modo light/dark y persistencia de preferencias en localStorage.",
       tags: ["React", "Tailwind CSS"],
       links: {
         demo: "https://frontend-mentor-luis.vercel.app/",
@@ -117,7 +117,7 @@ export const PROJECTS_DATA = {
       tags: ["HTML & Sass", "JavaScript", "PHP", "Figma"],
       links: {
         demo: "https://aerakoreanbeauty.com/",
-        repo: "", // No disponible
+        repo: "", 
         design: "https://www.figma.com/design/84O4uO0UtmZ2DAZ1h36cXN/AERA?node-id=0-1&t=topGIvKZISVBDgKF-1",
       },
       image: "/assets/img/proyecto-aera-800.webp"
