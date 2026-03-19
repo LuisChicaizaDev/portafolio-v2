@@ -30,12 +30,12 @@ export const HeroSection = () => {
 
           {/* Título Principal */}
           <h1 className="text-5xl md:text-7xl font-extrabold md:text-center lg:text-start text-white mb-6 tracking-tight">
-            Desarrollador <span className="text-transparent bg-clip-text bg-linear-to-r from-indigo-400 to-purple-400">Web</span>
+            Desarrollador <span className="text-transparent bg-clip-text bg-linear-to-r from-indigo-400 to-purple-400">Frontend</span>
           </h1>
 
           <p className="text-lg text-slate-400 mb-10 leading-relaxed max-w-2xl">
-            Estudiante de Ingeniería Informática con <span className="font-bold text-indigo-300">+2 años de experiencia</span> en proyectos reales. Me caracterizo por ser resolutivo: sé investigar, enfrentar problemas y <span className="font-bold text-indigo-300">sacar el trabajo adelante</span>.
-            Busco un equipo técnico donde pueda aportar esta autonomía y seguir aprendiendo y creciendo profesionalmente.
+            <span className="font-bold text-indigo-300">Desarrollador frontend con enfoque en React</span>, con experiencia en la creación de <span className="font-bold text-indigo-300">interfaces web</span> y proyectos reales. 
+            Trabajo con JavaScript moderno y desarrollo de aplicaciones dinámicas, enfocándome en la resolución de problemas y en seguir creciendo dentro del desarrollo frontend.
           </p>
 
           {/* Botones de Acción */}
