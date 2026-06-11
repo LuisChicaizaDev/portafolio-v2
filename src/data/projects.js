@@ -79,8 +79,8 @@ export const PROJECTS_DATA = {
       image: "/assets/img/proyecto-aera-800.webp"
     },
     {
-      title: "Aera – Página de Enlaces",
-      year: "2025",
+      title: "Aera – Página de Enlaces Rápidos",
+      year: "2025 - 2026",
       isFeatured: true,
       studyType: "Optimización Web",
       description: "Alternativa a Linktree totalmente personalizada para tener el control total sobre el diseño y la velocidad. El mapa de Google Maps se implementó con carga diferida (Lazy Load) para optimizar el rendimiento.",
