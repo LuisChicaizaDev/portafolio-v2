@@ -60,17 +60,17 @@ export const PROJECTS_DATA = {
     },
     {
       title: "Aera Korean Beauty",
-      year: "2024 | Actualizado 2026",
+      year: "2024 - 2026",
       isFeatured: true, 
-      studyType: "Migración & SEO",
-      description: "Sitio web diseñado en Figma y desarrollado con HTML, Sass y JavaScript. En 2025, migré el proyecto a una arquitectura PHP modular para facilitar su mantenimiento, manteniendo URLs limpias, el SEO existente y aplicando redirecciones 301.",
+      studyType: "Arquitectura, Performance & SEO",
+      description: "Proyecto en evolución continua que comenzó como un sitio estático y migró a una arquitectura PHP modular y DRY. Integra la API REST de Setmore como fuente única de datos para sincronizar servicios con la web y el chatbot, utilizando OAuth2 y caché local para optimizar el rendimiento. La última fase incorporé un blog flat-file basado en Markdown y nuevas mejoras de SEO técnico.",
       achievements: [
-        "De HTML Estático → PHP Modular",
-        "100% SEO Preservado (301 Redirects)",
-        "URLs Limpias y Semánticas (.htaccess)",
-        "Integración con API REST de Setmore"
+        "Arquitectura PHP modular y DRY con templates reutilizables",
+        "Integración con API REST de Setmore, OAuth2 y caché local",
+        "Blog flat-file con Markdown, metadatos dinámicos y Parsedown",
+        "SEO técnico con redirecciones 301, JSON-LD y sitemap dinámico",
       ],
-      tags: ["HTML & Sass", "JavaScript", "PHP", "Figma"],
+      tags: ["PHP", "JavaScript", "Sass", "REST API", "Markdown"],
       links: {
         demo: "https://aerakoreanbeauty.com/",
         repo: "", 
