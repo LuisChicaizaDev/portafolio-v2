@@ -4,8 +4,8 @@ export const PROJECTS_DATA = {
     focus_actual: ["React", "Tailwind CSS"],
     herramientas: ["Git", "GitHub", "Figma", "Supabase", "WordPress", "VSC"]
   },
- // PROYECTOS DESTACADOS
- projects: [
+  projects: [
+    // PROYECTOS DESTACADOS
     {
       title: "Aera - CRM Personalizado",
       year: "2026",
@@ -59,6 +59,47 @@ export const PROJECTS_DATA = {
       image: "/assets/img/proyecto-aera-crm-800.webp"
     },
     {
+      title: "Aera Korean Beauty",
+      year: "2024 | Actualizado 2026",
+      isFeatured: true, 
+      studyType: "Migración & SEO",
+      description: "Sitio web diseñado en Figma y desarrollado con HTML, Sass y JavaScript. En 2025, migré el proyecto a una arquitectura PHP modular para facilitar su mantenimiento, manteniendo URLs limpias, el SEO existente y aplicando redirecciones 301.",
+      achievements: [
+        "De HTML Estático → PHP Modular",
+        "100% SEO Preservado (301 Redirects)",
+        "URLs Limpias y Semánticas (.htaccess)",
+        "Integración con API REST de Setmore"
+      ],
+      tags: ["HTML & Sass", "JavaScript", "PHP", "Figma"],
+      links: {
+        demo: "https://aerakoreanbeauty.com/",
+        repo: "", 
+        design: "https://www.figma.com/design/84O4uO0UtmZ2DAZ1h36cXN/AERA?node-id=0-1&t=topGIvKZISVBDgKF-1",
+      },
+      image: "/assets/img/proyecto-aera-800.webp"
+    },
+    {
+      title: "Aera – Página de Enlaces",
+      year: "2025",
+      isFeatured: true,
+      studyType: "Optimización Web",
+      description: "Alternativa a Linktree totalmente personalizada para tener el control total sobre el diseño y la velocidad. El mapa de Google Maps se implementó con carga diferida (Lazy Load) para optimizar el rendimiento.",
+      achievements: [
+        "Carga diferida (Lazy Load) de Google Maps",
+        "Puntuación 99/100 en PageSpeed Insights",
+        "Diseño Minimalista 'Mobile First'"
+      ],
+      tags: ["HTML & Sass", "JavaScript", "Figma"],
+      links: {
+        demo: "https://aerakoreanbeauty.com/linkbio/",
+        repo: "",
+        design: "https://www.figma.com/design/84O4uO0UtmZ2DAZ1h36cXN/AERA?node-id=0-1&t=topGIvKZISVBDgKF-1",
+      },
+      image: "/assets/img/proyecto-aera-linkbio-800.webp"
+    },
+
+    // PROYECTOS ADICIONALES
+    {
       title: "Fútbol App",
       year: "2025",
       description: "Aplicación web desarrollada con React para la gestión de equipos de fútbol. Incluye panel público y de administración, implementación de operaciones CRUD, autenticación de usuarios y gestión de datos con Supabase.",
@@ -101,45 +142,6 @@ export const PROJECTS_DATA = {
         repo: "https://github.com/LuisChicaizaDev/proyecto-daw",
       },
       image: "/assets/img/proyecto-boxeo-project-800.webp"
-    },
-    {
-      title: "Aera Korean Beauty",
-      year: "2024 | Actualizado 2026",
-      isFeatured: true, 
-      studyType: "Migración & SEO",
-      description: "Sitio web diseñado en Figma y desarrollado con HTML, Sass y JavaScript. En 2025, migré el proyecto a una arquitectura PHP modular para facilitar su mantenimiento, manteniendo URLs limpias, el SEO existente y aplicando redirecciones 301.",
-      achievements: [
-        "De HTML Estático → PHP Modular",
-        "100% SEO Preservado (301 Redirects)",
-        "URLs Limpias y Semánticas (.htaccess)",
-        "Integración con API REST de Setmore"
-      ],
-      tags: ["HTML & Sass", "JavaScript", "PHP", "Figma"],
-      links: {
-        demo: "https://aerakoreanbeauty.com/",
-        repo: "", 
-        design: "https://www.figma.com/design/84O4uO0UtmZ2DAZ1h36cXN/AERA?node-id=0-1&t=topGIvKZISVBDgKF-1",
-      },
-      image: "/assets/img/proyecto-aera-800.webp"
-    },
-    {
-      title: "Aera – Página de Enlaces",
-      year: "2025",
-      isFeatured: true,
-      studyType: "Optimización Web",
-      description: "Alternativa a Linktree totalmente personalizada para tener el control total sobre el diseño y la velocidad. El mapa de Google Maps se implementó con carga diferida (Lazy Load) para optimizar el rendimiento.",
-      achievements: [
-        "Carga diferida (Lazy Load) de Google Maps",
-        "Puntuación 99/100 en PageSpeed Insights",
-        "Diseño Minimalista 'Mobile First'"
-      ],
-      tags: ["HTML & Sass", "JavaScript", "Figma"],
-      links: {
-        demo: "https://aerakoreanbeauty.com/linkbio/",
-        repo: "",
-        design: "https://www.figma.com/design/84O4uO0UtmZ2DAZ1h36cXN/AERA?node-id=0-1&t=topGIvKZISVBDgKF-1",
-      },
-      image: "/assets/img/proyecto-aera-linkbio-800.webp"
     },
     {
       title: "Portafolio v1",
