@@ -100,6 +100,17 @@ export const PROJECTS_DATA = {
 
     // PROYECTOS ADICIONALES
     {
+      title: "Gifs App",
+      year: "2026",
+      description: "Aplicación web desarrollada con React y TypeScript para buscar GIFs con la API de Giphy. Incluye búsqueda con debounce, historial de búsquedas previas, caché en memoria con useRef para evitar peticiones repetidas y pruebas unitarias con Vitest y Testing Library.",
+      tags: ["React", "TypeScript", "Axios", "Vitest", "CSS"],
+      links: {
+        demo: "https://find-your-gifs.netlify.app/",
+        repo: "https://github.com/LuisChicaizaDev/gifs-app"
+      },
+      image: "/assets/img/proyecto-gifs-app-800.webp"
+    },
+    {
       title: "Fútbol App",
       year: "2025",
       description: "Aplicación web desarrollada con React para la gestión de equipos de fútbol. Incluye panel público y de administración, implementación de operaciones CRUD, autenticación de usuarios y gestión de datos con Supabase.",
