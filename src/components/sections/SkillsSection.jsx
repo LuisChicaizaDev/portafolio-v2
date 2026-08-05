@@ -112,7 +112,7 @@ export const SkillsSection = () => (
           </h2>
         </div>
         <p className="text-slate-400 max-w-3xl text-lg">
-          Este es el stack que utilizo para <span className="font-bold text-indigo-300">desarrollar mis proyectos</span> y seguir creciendo como desarrollador. Combina las tecnologías que uso en mi experiencia profesional con las herramientas modernas que estoy aprendiendo y profundizando por iniciativa propia.
+          Este es el stack que utilizo para <span className="font-bold text-indigo-300">desarrollar mis proyectos</span> y seguir creciendo como desarrollador. Combina las tecnologías que uso en mi experiencia profesional con las herramientas modernas en las que estoy profundizando por iniciativa propia.
         </p>
       </div>
 
