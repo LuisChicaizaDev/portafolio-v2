@@ -19,7 +19,7 @@ export const ExperienceSection = () => {
             </h2>
           </div>
           <p className="text-slate-400 max-w-3xl text-lg">
-            Mi experiencia laboral, combinada con una ruta de aprendizaje académico y técnico constante para fortalecer la base de mis conocmientos. 
+            Mi experiencia profesional, junto con una formación académica y un aprendizaje continuo, me permiten seguir profundizando en el desarrollo frontend y afrontar nuevos retos con una buena base técnica. 
           </p>
         </div>
 
@@ -114,9 +114,9 @@ export const ExperienceSection = () => {
             </div>
 
             {/* Mensaje motivacional o cierre */}
-            <div className="bg-linear-to-br from-slate-900 to-indigo-950/30 p-5 rounded-xl border border-slate-800/50 mt-8">
+            <div className="bg-linear-to-br from-slate-900 to-indigo-900/20 p-5 rounded-xl border border-slate-800/50 mt-8">
               <p className="text-slate-400 text-sm italic">
-                "La formación continua es mi motor. Actualmente compagino mi trabajo con estudios de ingeniería para profundizar en arquitecturas complejas."
+                "La formación continua es mi motor. Actualmente compagino mi trabajo con estudios de ingeniería para seguir profundizando en el desarrollo frontend y en la ingeniería del software."
               </p>
             </div>
 

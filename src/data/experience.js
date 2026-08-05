@@ -6,7 +6,7 @@ export const EXPERIENCE_DATA = {
         company: "Join Marketing LTD",
         dates: "Mayo 2023 - Actualidad",
         current: true,
-        description: "Mi rol se centra en el desarrollo y mantenimiento de sitios web y Landing Pages orientadas a conversión. Implementación de funcionalidades dinámicas en frontend y personalización de entornos WordPress mediante código para adaptarlos a necesidades específicas de negocio.",
+        description: "Mi rol se centra en el desarrollo y mantenimiento de sitios web y landing pages orientadas a conversión. Implemento funcionalidades dinámicas con JavaScript, PHP y WordPress, experiencia que complemento fuera del ámbito laboral profundizando en el ecosistema moderno de React y TypeScript mediante proyectos personales.",
         tags: ["JavaScript", "HTML5", "CSS3", "Bootstrap", "WordPress", "PHP"],
         achievements: [
             "Desarrollo de funcionalidades dinámicas en frontend con JavaScript.",
@@ -41,7 +41,7 @@ export const EXPERIENCE_DATA = {
         {
         id: 2,
         degree: "Técnico Superior en Desarrollo de Aplicaciones Web (DAW)",
-        school: "ILERNA FP",
+        school: "ILERNA FP Online",
         dates: "Feb 2023 - Feb 2025",
         description: "Ciclo Formativo de Grado Superior. Especialización en arquitecturas Full Stack, diseño de bases de datos y despliegue de aplicaciones."
         },
