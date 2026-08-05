@@ -2,7 +2,7 @@ export const EXPERIENCE_DATA = {
     // TRAYECTORIA LABORAL
     work: [
         {
-        role: "Desarrollador Web",
+        role: "Desarrollador Web Frontend",
         company: "Join Marketing LTD",
         dates: "Mayo 2023 - Actualidad",
         current: true,
