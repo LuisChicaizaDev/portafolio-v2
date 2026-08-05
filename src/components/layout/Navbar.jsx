@@ -93,7 +93,7 @@ export const Navbar = () => {
                 <Button 
                   variant="primary" 
                   className="py-1.5! px-4! text-xs! gap-2" 
-                  href="/CV-Luis-Chicaiza.pdf"
+                  href="/Luis-Chicaiza-Frontend.pdf"
                   target="_blank" 
                   rel="noopener noreferrer"
                   icon={FileText}
@@ -138,7 +138,7 @@ export const Navbar = () => {
             <Button 
               variant="primary" 
               className="gap-2"
-              href="/CV-Luis-Chicaiza.pdf"
+              href="/Luis-Chicaiza-Frontend.pdf"
               target="_blank" 
               rel="noopener noreferrer" 
               icon={FileText}
