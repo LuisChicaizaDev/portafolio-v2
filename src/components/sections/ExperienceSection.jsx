@@ -102,7 +102,7 @@ export const ExperienceSection = () => {
                     </h4>
                     {edu.current && (
                       <span className="text-[10px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2 py-0.5 rounded uppercase tracking-wider font-bold">
-                        Actual
+                        En curso
                       </span>
                     )}
                   </div>
