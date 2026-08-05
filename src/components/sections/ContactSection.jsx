@@ -36,7 +36,7 @@ export const ContactSection = () => {
               </h2>
             </div>
             <p className="text-slate-400 max-w-3xl text-lg">
-              Busco incorporarme como desarrollador frontend donde pueda aportar mis conocimientos y seguir creciendo en el desarrollo de interfaces modernas. Si buscas a alguien con iniciativa, capacidad de aprendizaje y experiencia en proyectos reales, estaré encantado de conversar.
+              Busco incorporarme como desarrollador frontend donde pueda seguir creciendo profesionalmente y aportar mi experiencia en desarrollo web mientras continúo profundizando en React y TypeScript. Si buscas a alguien con iniciativa, aprendizaje continuo y experiencia desarrollando proyectos reales, estaré encantado de conversar.
             </p>
           </div>
     
@@ -167,7 +167,7 @@ export const ContactSection = () => {
                     <span className="text-slate-500">&lt;</span><span className="text-red-400">h1</span><span className="text-slate-500">&gt;</span>
                   </div>
                   <div className="pl-16">
-                    Disponible para oportunidades como Frontend Developer.
+                    Disponible para nuevas oportunidades como Frontend Developer.
                   </div>
                   <div className="pl-12">
                     <span className="text-slate-500">&lt;/</span><span className="text-red-400">h1</span><span className="text-slate-500">&gt;</span>
