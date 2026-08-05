@@ -11,14 +11,14 @@ export const PROJECTS_DATA = {
       year: "2026",
       isFeatured: true,
       studyType: "CRM a Medida",
-      description: "Aplicación web desarrollada para la gestión de clientes, consentimientos y métricas de negocio. Incluye funcionalidades como firma digital, integración con API REST de Setmore para la sincronización de servicios y gestión completa de datos mediante Supabase.",
+      description: "CRM desarrollado para gestionar clientes, consentimientos y métricas de negocio. Incluye funcionalidades como firma digital, integración con API REST de Setmore para la sincronización de servicios y gestión completa de datos mediante Supabase.",
       achievements: [
         "Firma digital para consentimientos",
         "Integración con API REST de Setmore",
         "Backend completo con Supabase (Auth, BD, Storage)",
         "Interfaz moderna con React + Tailwind CSS + Shadcn/ui",
       ],
-      tags: ["React", "Next.js", "Tailwind CSS", "Supabase", "Shadcn/ui"],
+      tags: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Supabase"],
       links: {
         demo: "https://crm.aerakoreanbeauty.com/",
         repo: "",
