@@ -77,16 +77,7 @@ export const ProjectsSection = () => {
             </h2>
           </div>
           <p className="text-slate-400 max-w-3xl text-lg">
-            Más allá del código, me motiva{" "}
-            <span className="font-bold text-indigo-300">
-              crear utilidad real
-            </span>
-            . Un ejemplo es la digitalización de un negocio familiar, un
-            proyecto donde{" "}
-            <span className="font-bold text-indigo-300">
-              asumí la responsabilidad de todo el ciclo de desarrollo
-            </span>{" "}
-            generando un impacto directo en el crecimiento del negocio.
+            Más allá del código, <span className="font-bold text-indigo-300">me motiva crear soluciones que aporten utilidad real.</span> Estos proyectos nacieron para digitalizar un negocio familiar y mejorar su operativa diaria. A lo largo de su evolución he participado en el <span className="font-bold text-indigo-300">diseño, desarrollo e implementación de nuevas funcionalidades</span>, convirtiéndolos en una parte importante de mi aprendizaje como desarrollador.
           </p>
         </div>
 
