@@ -34,8 +34,7 @@ export const HeroSection = () => {
           </h1>
 
           <p className="text-lg text-slate-400 mb-10 leading-relaxed max-w-2xl">
-            <span className="font-bold text-indigo-300">Desarrollador frontend con enfoque en React</span>, con experiencia en la creación de <span className="font-bold text-indigo-300">interfaces web</span> y proyectos reales. 
-            Trabajo con JavaScript moderno y desarrollo de aplicaciones dinámicas, enfocándome en la resolución de problemas y en seguir creciendo dentro del desarrollo frontend.
+            <span className="font-bold text-indigo-300">Desarrollador web con enfoque en frontend</span>. Actualmente profundizando en <span className="font-bold text-indigo-300">React</span> y <span className="font-bold text-indigo-300">TypeScript</span> mientras desarrollo proyectos personales para reforzar mis conocimientos y continúo creciendo como desarrollador. Me gusta aportar soluciones mediante interfaces de usuario atractivas, funcionales y bien cuidadas.
           </p>
 
           {/* Botones de Acción */}
