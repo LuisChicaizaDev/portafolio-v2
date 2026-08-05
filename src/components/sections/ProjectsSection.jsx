@@ -200,22 +200,16 @@ export const ProjectsSection = () => {
         {/* =======================================================
            PROYECTOS PERSONALES 
            ======================================================= */}
-        <div className="text-center my-16">
-          <h3 className="text-2xl font-bold text-white inline-block relative mb-4">
-            Proyectos Adicionales
+        <div className="text-center my-18">
+          <h3 className="text-4xl md:text-5xl font-bold text-white inline-block relative my-8">
+            Proyectos <span className="text-transparent bg-clip-text bg-linear-to-r from-indigo-400 to-purple-400">Adicionales</span>
           </h3>
           <p className="text-slate-400 max-w-3xl mx-auto text-lg">
-            Aquí es donde la curiosidad se convierte en código. Un recorrido
-            desde mi{" "}
-            <span className="font-bold text-indigo-300">
-              Trabajo Final de Curso
-            </span>{" "}
-            hasta mis últimos experimentos, consolidando bases Frontend y
-            Backend mientras exploro nuevas tecnologías.
+            Aquí reúno proyectos personales con los que he ido consolidando mis conocimientos como desarrollador. Desde mi Trabajo Final de Grado hasta las aplicaciones más recientes, reflejan mi evolución y el camino que estoy siguiendo para profundizar en el desarrollo frontend con React.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-30">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-14 mb-18">
           {standardProjects.map((project) => (
             <article
               key={project.title}
