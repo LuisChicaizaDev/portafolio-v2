@@ -102,7 +102,7 @@ export const PROJECTS_DATA = {
     {
       title: "Gifs App",
       year: "2026",
-      description: "Aplicación web desarrollada con React y TypeScript para buscar GIFs con la API de Giphy. Incluye búsqueda con debounce, historial de búsquedas previas, caché en memoria con useRef para evitar peticiones repetidas y pruebas unitarias con Vitest y Testing Library.",
+      description: "Aplicación desarrollada como parte de mi especialización en React y TypeScript. Permite buscar GIFs mediante la API de Giphy. Incluye búsqueda con debounce, historial de búsquedas previas, caché en memoria con useRef para evitar peticiones repetidas y pruebas unitarias con Vitest y Testing Library.",
       tags: ["React", "TypeScript", "Axios", "Vitest", "CSS"],
       links: {
         demo: "https://find-your-gifs.netlify.app/",
@@ -113,7 +113,7 @@ export const PROJECTS_DATA = {
     {
       title: "Fútbol App",
       year: "2025",
-      description: "Aplicación web desarrollada con React para la gestión de equipos de fútbol. Incluye panel público y de administración, implementación de operaciones CRUD, autenticación de usuarios y gestión de datos con Supabase.",
+      description: "Proyecto personal creado para explorar un flujo de trabajo de desarrollo asistido por IA en una aplicación React. Incluye panel público y de administración, implementación de operaciones CRUD, autenticación de usuarios y gestión de datos con Supabase.",
       tags: ["React", "Tailwind CSS", "Supabase", "Next.js"],
       links: {
         demo: "https://futbol-app-mu.vercel.app/",
@@ -135,7 +135,7 @@ export const PROJECTS_DATA = {
     {
       title: "Desafíos Frontend Mentor",
       year: "2025",
-      description: "Aplicación desarrollada con React y Tailwind CSS que recopila múltiples interfaces interactivas. Incluye gestión de estado con hooks (useState, useEffect), modo light/dark y persistencia de preferencias en localStorage.",
+      description: "Desarrollado con React y Tailwind CSS que recopila distintos desafíos de Frontend Mentor desarrollados con React y Tailwind CSS. Incluye gestión de estado con hooks (useState, useEffect), modo light/dark y persistencia de preferencias en localStorage.",
       tags: ["React", "Tailwind CSS"],
       links: {
         demo: "https://frontend-mentor-luis.vercel.app/",
