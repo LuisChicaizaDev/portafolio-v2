@@ -11,6 +11,45 @@ import {
 import { FiGithub, FiFigma } from "react-icons/fi";
 import { Button } from "../ui/Button";
 import { PROJECTS_DATA } from "../../data/projects";
+import { AiExperimentCard } from "./AiExperimentCard";
+
+const ProjectCard = ({ project }) => (
+  <article className="group bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-slate-600 transition-all duration-300 flex flex-col h-full">
+    {project.image && (
+      <div className="relative h-auto overflow-hidden bg-slate-800 aspect-16/10">
+        <div className="absolute inset-0 bg-slate-950/20 group-hover:bg-slate-950/0 transition-colors z-10" />
+        <img
+          src={project.image}
+          alt={project.title}
+          width="403"
+          height="252"
+          loading="lazy"
+          className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+        />
+      </div>
+    )}
+    <div className="p-6 flex flex-col grow">
+      <div className="flex justify-between items-start mb-3">
+        <h3 className="text-xl font-bold text-slate-100 group-hover:text-indigo-400 transition-colors">{project.title}</h3>
+        <span className="text-xs font-mono text-slate-400 pt-1">{project.year}</span>
+      </div>
+      <p className="text-slate-400 text-sm mb-6 grow leading-relaxed">{project.description}</p>
+      <div className="flex flex-wrap gap-2 mb-6">
+        {project.tags.map((tag) => (
+          <span key={tag} className="px-2 py-1 text-xs font-medium text-slate-400 bg-slate-950 rounded border border-slate-800">{tag}</span>
+        ))}
+      </div>
+      <div className="flex gap-3 mt-auto pt-4 border-t border-slate-800">
+        {project.links.repo && (
+          <Button variant="outline" className="flex-1 py-2! text-xs!" href={project.links.repo} target="_blank" icon={FiGithub}>Código</Button>
+        )}
+        {project.links.demo && (
+          <Button variant="secondary" className="flex-1 py-2! text-xs!" href={project.links.demo} target="_blank" icon={ExternalLink}>Demo</Button>
+        )}
+      </div>
+    </div>
+  </article>
+);
 
 export const ProjectsSection = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -18,7 +57,12 @@ export const ProjectsSection = () => {
   const closeTimerRef = useRef(null);
 
   const featuredCases = PROJECTS_DATA.projects.filter((p) => p.isFeatured);
-  const standardProjects = PROJECTS_DATA.projects.filter((p) => !p.isFeatured);
+  const aiExperiments = PROJECTS_DATA.projects.filter(
+    (p) => p.category === "ai-experiment",
+  );
+  const standardProjects = PROJECTS_DATA.projects.filter(
+    (p) => !p.isFeatured && p.category !== "ai-experiment",
+  );
 
   const openGalleryModal = (project) => {
     if (closeTimerRef.current) {
@@ -198,6 +242,24 @@ export const ProjectsSection = () => {
         </div>
 
         {/* =======================================================
+           EXPERIMENTOS CON IA APLICADA
+           ======================================================= */}
+        <div className="text-center my-18">
+          <h3 className="text-4xl md:text-5xl font-bold text-white inline-block relative my-8">
+            Experimentos con <span className="text-transparent bg-clip-text bg-linear-to-r from-indigo-400 to-purple-400">IA aplicada</span>
+          </h3>
+          <p className="text-slate-400 max-w-3xl mx-auto text-lg">
+            Proyectos funcionales donde utilizo agentes de IA, APIs y herramientas externas para resolver problemas reales, tomando decisiones sobre producto, arquitectura, integraciones y experiencia de usuario.
+          </p>
+        </div>
+
+        <div className="max-w-6xl mx-auto space-y-10 mb-18">
+          {aiExperiments.map((project) => (
+            <AiExperimentCard key={project.title} project={project} />
+          ))}
+        </div>
+
+        {/* =======================================================
            PROYECTOS PERSONALES 
            ======================================================= */}
         <div className="text-center my-18">
@@ -211,71 +273,7 @@ export const ProjectsSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-14 mb-18">
           {standardProjects.map((project) => (
-            <article
-              key={project.title}
-              className="group bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-slate-600 transition-all duration-300 flex flex-col h-full"
-            >
-              <div className="relative h-auto overflow-hidden bg-slate-800 aspect-16/10">
-                <div className="absolute inset-0 bg-slate-950/20 group-hover:bg-slate-950/0 transition-colors z-10" />
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  width="403"
-                  height="252"
-                  loading="lazy"
-                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-
-              <div className="p-6 flex flex-col grow">
-                <div className="flex justify-between items-start mb-3">
-                  <h3 className="text-xl font-bold text-slate-100 group-hover:text-indigo-400 transition-colors">
-                    {project.title}
-                  </h3>
-                  <span className="text-xs font-mono text-slate-400 pt-1">
-                    {project.year}
-                  </span>
-                </div>
-                <p className="text-slate-400 text-sm mb-6 grow leading-relaxed">
-                  {/* dangerouslySetInnerHTML={{ __html: project.description }} */}
-                  {project.description}
-                </p>
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {project.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="px-2 py-1 text-xs font-medium text-slate-400 bg-slate-950 rounded border border-slate-800"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-                <div className="flex gap-3 mt-auto pt-4 border-t border-slate-800">
-                  {project.links.repo && (
-                    <Button
-                      variant="outline"
-                      className="flex-1 py-2! text-xs!"
-                      href={project.links.repo}
-                      target="_blank"
-                      icon={FiGithub}
-                    >
-                      Código
-                    </Button>
-                  )}
-                  {project.links.demo && (
-                    <Button
-                      variant="secondary"
-                      className="flex-1 py-2! text-xs!"
-                      href={project.links.demo}
-                      target="_blank"
-                      icon={ExternalLink}
-                    >
-                      Demo
-                    </Button>
-                  )}
-                </div>
-              </div>
-            </article>
+            <ProjectCard key={project.title} project={project} />
           ))}
         </div>
       </div>

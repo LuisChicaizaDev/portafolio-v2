@@ -98,6 +98,29 @@ export const PROJECTS_DATA = {
       image: "/assets/img/proyecto-aera-linkbio-800.webp"
     },
 
+    // EXPERIMENTOS CON IA APLICADA
+    {
+      title: "CAI Express",
+      year: "2026",
+      category: "ai-experiment",
+      studyType: "IA aplicada · Integraciones · Producto real",
+      description: "Plataforma web para solicitar y cotizar envíos de mensajería mediante un flujo guiado, cálculo de rutas y precios, geolocalización y generación de solicitudes estructuradas por WhatsApp.",
+      aiUsage: "Definí la idea y el flujo del producto, dirigí el desarrollo con agentes de IA y tomé las decisiones clave de integración, configuración, validación y experiencia de usuario.",
+      workflow: "Agentes → Rules → Skills → Revisión humana",
+      keyDecisions: [
+        "Integración de Google Places, LocationIQ y OpenRouteService.",
+        "Configuración de Google Cloud, cuotas y control de costes.",
+        "Validación del flujo y mejora de la experiencia de usuario.",
+      ],
+      tags: ["React", "TypeScript", "Google Places API", "OpenRouteService", "Tailwind CSS"],
+      links: {
+        demo: "https://cai-express.vercel.app/solicitar-envio",
+        repo: "",
+      },
+      image: "/assets/img/proyecto-cai-express-1000.webp",
+      mobileImage: "/assets/img/proyecto-cai-express-800.webp"
+    },
+
     // PROYECTOS ADICIONALES
     {
       title: "Gifs App",
