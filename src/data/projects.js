@@ -100,6 +100,27 @@ export const PROJECTS_DATA = {
 
     // EXPERIMENTOS CON IA APLICADA
     {
+      title: "PrestApp",
+      year: "2026",
+      category: "ai-experiment",
+      studyType: "IA aplicada · App personal · En evolución",
+      description: "Aplicación para gestionar préstamos personales, registrar pagos y ampliaciones, mantener actualizado el saldo pendiente y exportar el historial completo del préstamo a PDF.",
+      aiUsage: "Partí de una necesidad real mía, definí el producto y dirigí su evolución con agentes de IA, estableciendo reglas de arquitectura, negocio y UX/UI, y validando cada cambio antes de incorporarlo.",
+      workflow: "Agentes → Rules → Skills → Revisión humana",
+      keyDecisions: [
+        "Reglas de negocio y transacciones en Firestore para evitar sobrepagos, saldos incorrectos y estados inconsistentes.",
+        "Arquitectura por capas que separa interfaz, lógica de negocio y acceso a datos, con autenticación de Google y soporte offline.",
+        "Evolución versionada con changelog y workflows de desarrollo, incluyendo optimizaciones de rendimiento en la exportación a PDF.",
+      ],
+      tags: ["React", "TypeScript", "Firebase", "Firestore", "Tailwind CSS", "PWA"],
+      links: {
+        demo: "https://prestapp-cdfe4.web.app/",
+        repo: "",
+      },
+      image: "/assets/img/proyecto-prestapp-1000.webp",
+      mobileImage: "/assets/img/proyecto-prestapp-800.webp"
+    },
+    {
       title: "CAI Express",
       year: "2026",
       category: "ai-experiment",
