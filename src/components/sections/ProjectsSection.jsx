@@ -6,7 +6,6 @@ import {
   Zap,
   Images,
   X,
-  Lock,
 } from "lucide-react";
 import { FiGithub, FiFigma } from "react-icons/fi";
 import { Button } from "../ui/Button";
@@ -30,21 +29,48 @@ const ProjectCard = ({ project }) => (
     )}
     <div className="p-6 flex flex-col grow">
       <div className="flex justify-between items-start mb-3">
-        <h3 className="text-xl font-bold text-slate-100 group-hover:text-indigo-400 transition-colors">{project.title}</h3>
-        <span className="text-xs font-mono text-slate-400 pt-1">{project.year}</span>
+        <h3 className="text-xl font-bold text-slate-100 group-hover:text-indigo-400 transition-colors">
+          {project.title}
+        </h3>
+        <span className="text-xs font-mono text-slate-400 pt-1">
+          {project.year}
+        </span>
       </div>
-      <p className="text-slate-400 text-sm mb-6 grow leading-relaxed">{project.description}</p>
+      <p className="text-slate-400 text-sm mb-6 grow leading-relaxed">
+        {project.description}
+      </p>
       <div className="flex flex-wrap gap-2 mb-6">
         {project.tags.map((tag) => (
-          <span key={tag} className="px-2 py-1 text-xs font-medium text-slate-400 bg-slate-950 rounded border border-slate-800">{tag}</span>
+          <span
+            key={tag}
+            className="px-2 py-1 text-xs font-medium text-slate-400 bg-slate-950 rounded border border-slate-800"
+          >
+            {tag}
+          </span>
         ))}
       </div>
       <div className="flex gap-3 mt-auto pt-4 border-t border-slate-800">
         {project.links.repo && (
-          <Button variant="outline" className="flex-1 py-2! text-xs!" href={project.links.repo} target="_blank" icon={FiGithub}>Código</Button>
+          <Button
+            variant="outline"
+            className="flex-1 py-2! text-xs!"
+            href={project.links.repo}
+            target="_blank"
+            icon={FiGithub}
+          >
+            Código
+          </Button>
         )}
         {project.links.demo && (
-          <Button variant="secondary" className="flex-1 py-2! text-xs!" href={project.links.demo} target="_blank" icon={ExternalLink}>Demo</Button>
+          <Button
+            variant="secondary"
+            className="flex-1 py-2! text-xs!"
+            href={project.links.demo}
+            target="_blank"
+            icon={ExternalLink}
+          >
+            Demo
+          </Button>
         )}
       </div>
     </div>
@@ -121,7 +147,18 @@ export const ProjectsSection = () => {
             </h2>
           </div>
           <p className="text-slate-400 max-w-3xl text-lg">
-            Más allá del código, <span className="font-bold text-indigo-300">me motiva crear soluciones que aporten utilidad real.</span> Estos proyectos nacieron para digitalizar un negocio familiar y mejorar su operativa diaria. A lo largo de su evolución he participado en el <span className="font-bold text-indigo-300">diseño, desarrollo e implementación de nuevas funcionalidades</span>, convirtiéndolos en una parte importante de mi aprendizaje como desarrollador.
+            Más allá del código,{" "}
+            <span className="font-bold text-indigo-300">
+              me motiva crear soluciones que aporten utilidad real.
+            </span>{" "}
+            Estos proyectos nacieron para digitalizar un negocio familiar y
+            mejorar su operativa diaria. A lo largo de su evolución he
+            participado en el{" "}
+            <span className="font-bold text-indigo-300">
+              diseño, desarrollo e implementación de nuevas funcionalidades
+            </span>
+            , convirtiéndolos en una parte importante de mi aprendizaje como
+            desarrollador.
           </p>
         </div>
 
@@ -246,10 +283,18 @@ export const ProjectsSection = () => {
            ======================================================= */}
         <div className="text-center my-18">
           <h3 className="text-4xl md:text-5xl font-bold text-white inline-block relative my-8">
-            Experimentos con <span className="text-transparent bg-clip-text bg-linear-to-r from-indigo-400 to-purple-400">IA aplicada</span>
+            Experimentos con{" "}
+            <span className="relative inline-flex items-center gap-2 whitespace-nowrap">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-indigo-400 to-purple-400">
+                IA
+              </span>
+            </span>
           </h3>
           <p className="text-slate-400 max-w-3xl mx-auto text-lg">
-            Proyectos funcionales donde utilizo agentes de IA, APIs y herramientas externas para resolver problemas reales, tomando decisiones sobre producto, arquitectura, integraciones y experiencia de usuario.
+            Proyectos funcionales donde utilizo agentes de IA, APIs y
+            herramientas externas para resolver problemas reales, tomando
+            decisiones sobre producto, arquitectura, integraciones y experiencia
+            de usuario.
           </p>
         </div>
 
@@ -272,10 +317,17 @@ export const ProjectsSection = () => {
            ======================================================= */}
         <div className="text-center my-18">
           <h3 className="text-4xl md:text-5xl font-bold text-white inline-block relative my-8">
-            Proyectos <span className="text-transparent bg-clip-text bg-linear-to-r from-indigo-400 to-purple-400">Adicionales</span>
+            Proyectos{" "}
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-indigo-400 to-purple-400">
+              Adicionales
+            </span>
           </h3>
           <p className="text-slate-400 max-w-3xl mx-auto text-lg">
-            Aquí reúno proyectos personales con los que he ido consolidando mis conocimientos como desarrollador. Desde mi Trabajo Final de Grado hasta las aplicaciones más recientes, reflejan mi evolución y el camino que estoy siguiendo para profundizar en el desarrollo frontend con React.
+            Aquí reúno proyectos personales con los que he ido consolidando mis
+            conocimientos como desarrollador. Desde mi Trabajo Final de Grado
+            hasta las aplicaciones más recientes, reflejan mi evolución y el
+            camino que estoy siguiendo para profundizar en el desarrollo
+            frontend con React.
           </p>
         </div>
 
