@@ -1,7 +1,7 @@
-import { ExternalLink, Sparkles } from "lucide-react";
+import { ExternalLink, Images, Sparkles } from "lucide-react";
 import { Button } from "../ui/Button";
 
-export const AiExperimentCard = ({ project }) => (
+export const AiExperimentCard = ({ project, onOpenGallery }) => (
   <article className="group relative bg-slate-900/70 border border-slate-800 rounded-3xl overflow-hidden hover:border-indigo-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-500/20">
     <div className="flex flex-col lg:flex-row items-stretch gap-0">
       <div className="order-2 lg:order-1 lg:w-3/5 p-6 md:p-8 flex flex-col">
@@ -58,17 +58,30 @@ export const AiExperimentCard = ({ project }) => (
           ))}
         </div>
 
-        {project.links.demo && (
-          <div className="mt-auto pt-4 border-t border-slate-800">
-            <Button
-              variant="primary"
-              className="w-full sm:w-auto py-3! text-sm!"
-              href={project.links.demo}
-              target="_blank"
-              icon={ExternalLink}
-            >
-              Ver proyecto
-            </Button>
+        {(project.links.demo || onOpenGallery) && (
+          <div className="mt-auto pt-4 border-t border-slate-800 flex flex-wrap gap-3">
+            {project.links.demo && (
+              <Button
+                variant="primary"
+                className="w-full sm:w-auto py-3! text-sm!"
+                href={project.links.demo}
+                target="_blank"
+                icon={ExternalLink}
+              >
+                Ver proyecto
+              </Button>
+            )}
+            {onOpenGallery && (
+              <Button
+                type="button"
+                variant="primary"
+                className="w-full sm:w-auto py-3! text-sm!"
+                onClick={onOpenGallery}
+                icon={Images}
+              >
+                Ver galería
+              </Button>
+            )}
           </div>
         )}
       </div>

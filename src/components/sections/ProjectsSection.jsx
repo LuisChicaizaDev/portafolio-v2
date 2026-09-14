@@ -255,7 +255,15 @@ export const ProjectsSection = () => {
 
         <div className="max-w-6xl mx-auto space-y-10 mb-18">
           {aiExperiments.map((project) => (
-            <AiExperimentCard key={project.title} project={project} />
+            <AiExperimentCard
+              key={project.title}
+              project={project}
+              onOpenGallery={
+                project.gallery?.length > 0
+                  ? () => openGalleryModal(project)
+                  : undefined
+              }
+            />
           ))}
         </div>
 
