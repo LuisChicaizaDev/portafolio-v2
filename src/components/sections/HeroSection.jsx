@@ -34,7 +34,7 @@ export const HeroSection = () => {
           </h1>
 
           <p className="text-lg text-slate-400 mb-10 leading-relaxed max-w-2xl">
-            <span className="font-bold text-indigo-300">Desarrollador web con enfoque en frontend</span>. Actualmente profundizando en <span className="font-bold text-indigo-300">React</span> y <span className="font-bold text-indigo-300">TypeScript</span> mientras desarrollo proyectos personales para reforzar mis conocimientos y continúo creciendo como desarrollador. Me gusta aportar soluciones mediante interfaces de usuario atractivas, funcionales y bien cuidadas.
+            <span className="font-bold text-indigo-300">Desarrollador web con más de 3 años de experiencia profesional</span>, trabajando en la creación e implementación de soluciones web. Actualmente profundizando en <span className="font-bold text-indigo-300">React</span> y <span className="font-bold text-indigo-300">TypeScript</span> mientras desarrollo proyectos personales para reforzar mis conocimientos y continúo creciendo como desarrollador.
           </p>
 
           {/* Botones de Acción */}
